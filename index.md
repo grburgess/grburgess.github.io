@@ -4,7 +4,7 @@ layout: default
 
 
 
-![#JKL filter](jmb.jpg =100x){:class="img-responsive"}
+![#JKL filter](jmb.jpg |height=100){:class="img-responsive"}
 
 # Publications
 Full list of [Publications](/pubs.html)
