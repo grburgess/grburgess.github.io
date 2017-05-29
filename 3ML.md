@@ -1,7 +1,7 @@
 # 3ML
 
 ## Concept
-Multi-messenger astronomy is quickly becoming an important aspect of modern astrophsyical analysis. With this in mind, we have started a project to modernize the ability to perform multi-messenger/wavelength astronomy: The Multi-Mission Maximum Likelihood framework (**3ML**).
+Multi-messenger astronomy is quickly becoming an important aspect of modern astrophysical analysis. With this in mind, we have started a project to modernize the ability to perform multi-messenger/wavelength astronomy: The Multi-Mission Maximum Likelihood framework (**3ML**).
 
 ## Code
 

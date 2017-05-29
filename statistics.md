@@ -2,7 +2,7 @@
 
 Proper statistical treatment is imperative for astrophysical data analysis. While we are typically good at mathematics and modeling, we lack some of the skills developed in the statistical literature. I have listed a collection of papers and websites that provide a starting point for different types of projects as well as safety checks before publishing. 
 
-## General Statsitics Papers
+## General Statistics Papers
 
 * [Dos and don'ts of reduced chi-squared](https://arxiv.org/abs/1012.3754)
 * [Understanding better (some) astronomical data using Bayesian methods](https://arxiv.org/abs/1112.3652)
