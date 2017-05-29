@@ -3,8 +3,7 @@ layout: default
 ---
 
 
-
-![#JKL filter](jmb.jpg|height=100){:class="img-responsive"}
+<img src="jmb.jpg" alt="Drawing" style="width: 200px;"/>
 
 # Publications
 Full list of [Publications](/pubs.html)
