@@ -2,5 +2,5 @@
 layout: default
 ---
 
-
-# some stuff
+*Full list of [Publications](/pubs.html)
+*Academic [CV](/cv/long-cv.pdf)
