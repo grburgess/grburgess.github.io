@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-## Publications
+# Publications
 Full list of [Publications](/pubs.html)
 
-## CV
+# CV
 Academic [CV](/cv/long-cv.pdf)
