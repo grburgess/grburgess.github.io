@@ -1,3 +1,16 @@
-name: J. Michael Burgess, Stars and Stats
-markdown: kramdown
+name: J. Michael Burgess
+email: jburgess@mpe.mpg.de
+description: >
+  I'm a gamma-ray astrophysicist studying gamma-ray bursts (GRBs) and other extreme objects.
+  While I am very intersted in understanding the physics of GRB prompt emission, I am also
+  very intersted in proper statistical techniques for the study of spectral data, Poisson time-series,
+  and non-linear modeling. 
+url: "http:/jmichaelburgess.com"
+github_username:  grburgess
+gems:
+  - jekyll-sitemap
+
 theme: jekyll-theme-midnight
+markdown: kramdown
+
+
