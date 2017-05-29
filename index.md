@@ -5,7 +5,7 @@ layout: default
 
 <img src="jmb.jpg" alt="Drawing" style="width: 200px;"/>
 
-My research is summarized [here](/research/)
+My research is summarized [here](/research/).
 
 
 # Publications
