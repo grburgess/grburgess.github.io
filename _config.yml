@@ -7,13 +7,13 @@ description: > # this means to ignore newlines until "baseurl:"
   Bayesian modeling, and development of tools to advance multi-wavelength
   astronomy. 
  
-#baseurl: "/" # the subpath of your site, e.g. /blog/
+baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jmichaelburgess.com" # the base hostname & protocol for your site
 github_username:  grburgess
-#permalink: /blog/:year/:month/:title.html
+permalink: /:title/ #/blog/:year/:month/:title.html
 gems:
   - jekyll-sitemap
-
+  - jekyll-feed
 # Build settings
 markdown: kramdown
 #theme: jekyll-theme-tactile

@@ -10,7 +10,7 @@ My main research topic is the prompt emission of gamma-ray bursts (GRBs). I have
 One of the most pressing debates in GRBs is the emission process responsible for the observed prompt gamma-rays. The primary theories are either photospheric emission occurring below or very near the photosperic radius of the GRB, or non-thermal (possibly synchrotron) emission high above the photosphere. Diving further into the unknown, we come across the problem of how the internal energy of the jet is converted into radiation: either shocks or some form of magnetic dissipation. 
 
 <p>
-<img src="grb_shell_final.jpg" style="width: 500px;"/>
+<img src="/images/grb_shell_final.jpg" style="width: 500px;"/>
  <em>Image credit: NASA</em>
 </p>
 
