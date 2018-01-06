@@ -11,6 +11,8 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://jmichaelburgess.com" # the base hostname & protocol for your site
 github_username:  grburgess
 permalink: /:title/ #/blog/:year/:month/:title.html
+plugins:
+  - jekyll-remote-theme
 gems:
   - jekyll-sitemap
   - jekyll-feed
