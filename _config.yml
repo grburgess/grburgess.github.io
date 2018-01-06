@@ -13,8 +13,8 @@ title                    : "grburgess.github.io"
 title_separator          : "-"
 name                     : "J. Michael Burgess"
 description              : "A place to rant about gamma-rays and distributions."
-url                      : 'www.jmichaelburgess.com'
-baseurl                  : # the subpath of your site, e.g. "/blog"
+url                      : "https://grburgess.github.io"
+baseurl                  : ""
 repository               : 'grburgess/grburgess.github.io'
 teaser                   : "/assets/images/backplot.png"
 # breadcrumbs            : false # true, false (default)
