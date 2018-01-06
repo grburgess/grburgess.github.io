@@ -16,5 +16,7 @@ gems:
   - jekyll-feed
 # Build settings
 markdown: kramdown
+remote_theme: "mmistakes/minimal-mistakes"
 #theme: jekyll-theme-tactile
-theme: minima
+#theme: minimal-mistakes-jekyll
+#theme: minima

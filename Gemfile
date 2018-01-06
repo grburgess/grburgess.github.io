@@ -1,3 +1,4 @@
 source 'https://rubygems.org'
 gem 'github-pages', group: :jekyll_plugins
-gem 'jekyll-theme-midnight'
+gem "minimal-mistakes-jekyll"
+#gem 'jekyll-theme-midnight'
