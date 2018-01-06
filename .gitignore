@@ -1,1 +1,7 @@
+.DS_Store
+.idea/
+.jekyll-metadata
+.sass-cache/
+Gemfile.lock
+404.md
 _site/
