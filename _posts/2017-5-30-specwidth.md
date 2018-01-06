@@ -1,5 +1,4 @@
 ---
-layout: post
 title: Spectral Width of Gamma ray Bursts
 ---
 
@@ -9,5 +8,5 @@ The spectral width and sharpness of unfolded, observed GRB spectra have been pre
 [Spectral Width of Gamma Ray Bursts](https://arxiv.org/abs/1705.05718)
 
 
-<img src="/images/width_ppc_sync.jpg" alt="Drawing" style="width: 300px;"/> <img src="/images/break_energy.jpg" alt="Drawing" style="width: 300px;"/>
+<img src="assets/images/width_ppc_sync.jpg" alt="Drawing" style="width: 300px;"/> <img src="/assets/images/break_energy.jpg" alt="Drawing" style="width: 300px;"/>
 
