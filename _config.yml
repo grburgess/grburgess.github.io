@@ -5,14 +5,14 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "plum" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "grburgess.github.io"
 title_separator          : "-"
-name                     : "Your Name"
-description              : "An amazing website."
+name                     : "J. Michael Burgess"
+description              : "A place to rant about gamma-rays and distributions."
 url                      : 'www.jmichaelburgess.com'
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : 'grburgess/grburgess.github.io'
@@ -40,7 +40,7 @@ staticman:
   path                   : # "/_data/comments/{options.slug}" (default)
   requiredFields         : # ['name', 'email', 'message']
   transforms:
-    email                : # "md5"
+  email                : # "md5"
   generatedFields:
     date:
       type               : # "date"
@@ -64,7 +64,7 @@ naver_site_verification  :
 twitter:
   username               :
 facebook:
-  username               :
+  username               : 'jmichaelburgess'
   app_id                 :
   publisher              :
 og_image                 : "/assets/images/backplot.png"# Open Graph/Twitter default site image
@@ -88,14 +88,14 @@ author:
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "High-energy astrophysicist attempting inference."
   location         : "Max-Planck-Institut für extraterrestrische Physik"
-  email            :
-  uri              :
+  email            : "jburgess@mpe.mpg.de"
+  uri              : "jmichaelburgess.com"
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
-  facebook         :
+  facebook         : 'jmichaelburgess'
   foursquare       :
   github           : "grburgess"
   gitlab           :
@@ -105,7 +105,7 @@ author:
   lastfm           :
   linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   pinterest        :
-  soundcloud       :
+  soundcloud       : 'j-michael-burgess'
   stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
   steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
   tumblr           :
@@ -250,7 +250,16 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: # true
       share: true
       related: true
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      #timezone: America/New_York
