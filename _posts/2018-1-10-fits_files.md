@@ -4,7 +4,8 @@ toc: true
 toc_label: "Handling X-ray FITS files and Forward Folding"
 toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
 ---
-In high-energy astronomy/astrophysics, we are often perfroming the task of fitting model **photon** spectra to **counts** data. I put emphasis on photon and counts because these terms represent two very different things that often get confused or interchanged with one another. Astrophysical sources emit photon fluxes. A quick refresher in [Rybiki and Lightman](http://adsabs.harvard.edu/abs/1979rpa..book.....R) reminds us that a differential photon flux as units of \\(\frac{d N_p} {d E\; dt \;d A}\\). While an x-ray instrument measures this photon flux, it gets converted into an electronic signal and recorded as a count rate \\(\frac{d N_c}{d\varepsilon\; dt}\\).
+
+In high-energy astronomy/astrophysics, we are often perfroming the task of fitting model **photon** spectra to **counts** data. I put emphasis on photon and counts because these terms represent two very different things that often get confused or interchanged with one another. Astrophysical sources emit photon fluxes. A quick refresher in [Rybiki and Lightman](http://adsabs.harvard.edu/abs/1979rpa..book.....R) reminds us that a differential photon flux as units photons/s/cm2/keV. While an x-ray instrument measures this photon flux, it gets converted into an electronic signal and recorded as a count rate (counts/s/PHA channel)
 
 Where did the area and go and why a different energy? The flux was measured over the detector's *effective area* and photons of different energy where redistributed as counts in different pulse height analysis (PHA) channels. The conversion between these two quantities is acheived by the  detector response matrix (DRM) of the instrument. This characterizes the instruments effective area and energy dispersion. I'm not going to go into great detail about what these terms mean. For that, I recommend either the books by either [Knolls](https://www.amazon.com/Radiation-Detection-Measurement-Glenn-Knoll/dp/0470131489) or [Aranud](https://www.cambridge.org/core/books/handbook-of-xray-astronomy/8A22A341E84DD5CA2CFB36BF365977FC) as they are an excellent resource for any high-energy astronomer. Let's just say that the detection and measurement properties of the scintilator, CCD, or whatever detector is used to convert the x-rays into a digital signal are stored in the DRM. 
 
@@ -17,7 +18,7 @@ Let's now have a look at some of the basics required to analyze x-ray data. We w
 
 ```python
 import numpy as np
-import scipy.integrate as integrate
+
 %matplotlib notebook
 import matplotlib.pyplot as plt
 
@@ -130,7 +131,6 @@ Next, we get the exposure of the time interval. Note that this is not the durati
 
 ```python
 dt = spectrum_ext.data['EXPOSURE']
-
 Nc = dNc_dt * dt
 ```
 
@@ -159,14 +159,11 @@ We will define a little function to plot rates with plotly.
 ```python
 def rate_plot(ax,bin_edges,rate,label=None):
 
-    
-
-
     ax.step(bin_edges[:-1],rate,where='pre', label=label)
 
     ax.set_xscale('log')
     ax.set_yscale('log')
-
+	
     ax.set_xlabel('Channel Energy')
     ax.set_ylabel(r'$\frac{d N_c}{dt dE}$')
 
@@ -177,9 +174,6 @@ def rate_plot(ax,bin_edges,rate,label=None):
 ```python
 
 dNc_dtdE = dNc_dt/ dE
-
-
-
 
 fig, ax = plt.subplots()
 
@@ -265,9 +259,6 @@ Now, let's grab some of the rows from the channel side of the matrix.
 
 ```python
 data = [rsp.matrix[i,:] for i in range(0,128,4)]
-
-# name the channels
-names  = ['chan. %d'%i for i in range(0,128,4)]
 ```
 
 
