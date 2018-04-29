@@ -62,7 +62,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               :"modethanpriors"
 facebook:
   username               : 'jmichaelburgess'
   app_id                 :
@@ -202,7 +202,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
-  - jekyll-jupyter-notebook
+#  - jekyll-jupyter-notebook
 
 remote_theme: 'mmistakes/minimal-mistakes'
 # Archives
