@@ -1,8 +1,5 @@
 ---
 title: "Handling X-ray FITS files and Forward Folding" 
-toc: true
-toc_label: "Handling X-ray FITS files and Forward Folding"
-toc_icon: "heart"  # corresponding Font Awesome icon name (without fa prefix)
 ---
 
 In high-energy astronomy/astrophysics, we are often performing the task of fitting model **photon** spectra to **counts** data. I put emphasis on photon and counts because these terms represent two very different things that often get confused or interchanged with one another. Astrophysical sources emit photon fluxes. A quick refresher in [Rybiki and Lightman](http://adsabs.harvard.edu/abs/1979rpa..book.....R) reminds us that a differential photon flux has units photons/s/cm2/keV. While an x-ray instrument measures this photon flux, it gets converted into an electronic signal and recorded as a count rate (counts/s/PHA channel).
