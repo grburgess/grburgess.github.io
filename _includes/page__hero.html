@@ -114,7 +114,7 @@
 
 <script>
   var layerCount = 5;
-  var starCount = 200;
+  var starCount = 75;
   var universe = document.getElementById('universe');
   var w = window;
   var d = document;
@@ -135,7 +135,7 @@
         star.setAttribute('class', 'star' + l);
         star.style.webkitTransform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
         star.style.transform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
-        star.style.backgroundColor = 'rgb(' + Math.round(Math.random() * 255) + ', ' + 0 + ', ' + Math.round(Math.random() * 255) + ')';
+        star.style.backgroundColor = ' rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ')';
         layer.appendChild(star);
       }
     }
