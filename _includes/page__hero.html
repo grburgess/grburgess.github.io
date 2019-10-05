@@ -119,7 +119,8 @@
   var d = document;
   var e = d.documentElement;
   var g = d.getElementsByTagName('body')[0];
-  var width = w.innerWidth || e.clientWidth || g.clientWidth;
+  //var width = w.innerWidth || e.clientWidth || g.clientWidth;
+  var width = e.clientWidth;// || g.clientWidth;
   //var height = w.innerHeight|| e.clientHeight|| g.clientHeight;
   var height =Math.max(
   document.body.scrollHeight, document.documentElement.scrollHeight,
@@ -145,6 +146,6 @@
     }
     layer.animate([{transform: 'translate3d(0, 0, 0)'},
                    {transform: 'translate3d(-' + width + 'px, 0, 0)'}],
-                  {duration: Math.pow(2, layerCount - l) * 1000, iterations: Infinity});
+                  {duration: Math.pow(2, layerCount - l) * 2000, iterations: Infinity});
   }
 </script>
