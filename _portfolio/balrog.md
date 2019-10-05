@@ -1,6 +1,6 @@
 ---
 title: "BALROG"
-excerpt: "Unofficial GMB GRB Locations"
+excerpt: "Unofficial GBM GRB Locations"
 header:
   image: 
   teaser: /assets/images/balrog.png
