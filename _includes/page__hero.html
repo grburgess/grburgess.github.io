@@ -104,7 +104,7 @@
     height: 4px;
     width: 4px;
     border-radius: 50%;
-    opacity: .75;
+    opacity: .3;
     position: absolute;
   }
 
@@ -112,7 +112,7 @@
     height: 5px;
     width: 5px;
     border-radius: 50%;
-    opacity: .75;
+    opacity: .4;
     position: absolute;
   }
 
@@ -120,7 +120,7 @@
     height: 5px;
     width: 5px;
     border-radius: 50%;
-    opacity: .75;
+    opacity: .55;
     position: absolute;
   }
 
@@ -128,7 +128,7 @@
     height: 6px;
     width: 6px;
     border-radius: 50%;
-    opacity: .75;
+    opacity: .5;
     position: absolute;
     }
 
@@ -156,7 +156,7 @@
 
 <script>
   var layerCount = 10;
-  var starCount = 80;
+  var starCount = 50;
   var universe = document.getElementById('universe');
   var w = window;
   var d = document;
@@ -180,10 +180,13 @@
       var ypos = Math.round(Math.random() * height);
       for (var s = 0; s < 2; ++s) {
         var star = document.createElement('div');
-        star.setAttribute('class', 'star' + l);
+	
+
+	star.setAttribute('class', 'star' + l);
         star.style.webkitTransform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
         star.style.transform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
-        star.style.backgroundColor = ' rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ')';
+        //star.style.backgroundColor = ' rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ')';
+	 star.style.backgroundColor = '#34DB8A'
         layer.appendChild(star);
       }
     }
