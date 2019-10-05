@@ -1,4 +1,6 @@
 ---
+layout: single
+author_profile: true
 title: Astrostatistics
 permalink: /astrostat/
 ---

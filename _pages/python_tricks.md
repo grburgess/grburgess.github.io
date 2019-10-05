@@ -1,4 +1,6 @@
 ---
+layout: single
+author_profile: true
 title: Python Tricks
 permalink: /python_tricks/
 ---

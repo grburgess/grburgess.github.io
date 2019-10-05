@@ -67,7 +67,7 @@ facebook:
   username               : 'jmichaelburgess'
   app_id                 :
   publisher              :
-og_image                 : "/assets/images/backplot.png"# Open Graph/Twitter default site image
+og_image                 : "/assets/images/backfill.png"# Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -242,6 +242,12 @@ compress_html:
     envs: development
 
 
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+
+    
 # Defaults
 defaults:
   # _posts
@@ -251,10 +257,11 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: false
+      read_time: true
       comments:  true
       share: true
       related: true
+
 defaults:
   # _pages
   - scope:
@@ -263,12 +270,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-      #timezone: America/New_York
-
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
 
 
 defaults:
@@ -279,4 +280,4 @@ defaults:
     values:
       layout: single
       author_profile: true
-      #timezone: America/New_York
+
