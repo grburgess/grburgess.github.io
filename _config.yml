@@ -89,32 +89,11 @@ author:
   bio              : "High-energy astrophysicist attempting inference."
   location         : "Max-Planck-Institut für extraterrestrische Physik"
   email            : "jburgess@mpe.mpg.de"
-  uri              : "jmichaelburgess.com"
   home             : # null (default), "absolute or relative url to link to author home"
-  bitbucket        :
-  codepen          :
-  dribbble         :
-  flickr           :
   facebook         : 'jmichaelburgess'
-  foursquare       :
   github           : "grburgess"
-  gitlab           :
-  google_plus      :
-  keybase          :
-  instagram        :
-  lastfm           :
-  linkedin         : # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
-  pinterest        :
   soundcloud       : 'j-michael-burgess'
-  stackoverflow    : # "123456/username" (the last part of your profile url, e.g. https://stackoverflow.com/users/123456/username)
-  steam            : # "steamId" (the last part of your profile url, e.g. https://steamcommunity.com/id/steamId/)
-  tumblr           :
-  twitter          :
-  vine             :
-  weibo            :
-  xing             :
-  youtube          : # "https://youtube.com/c/MichaelRoseDesign"
-
+  twitter          : 'morethanpriors'
 
 # Reading Files
 include:
@@ -205,34 +184,13 @@ whitelist:
 #  - jekyll-jupyter-notebook
 
 remote_theme: 'mmistakes/minimal-mistakes'
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path/my-awesome-category/index.html ~> path: /
+
 category_archive:
   type: liquid
   path: /categories/
 tag_archive:
   type: liquid
   path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
 
 # HTML Compression
 # - http://jch.penibelst.de/
@@ -241,43 +199,43 @@ compress_html:
   ignore:
     envs: development
 
-
-collections:
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-
     
 # Defaults
 defaults:
   # _posts
-  - scope:
+  -
+    scope:
       path: ""
       type: posts
     values:
       layout: single
       author_profile: true
       read_time: true
-      comments:  true
+      comments: true
       share: true
       related: true
-
-defaults:
   # _pages
-  - scope:
+  -
+    scope:
       path: ""
       type: pages
     values:
       layout: single
       author_profile: true
-
-
-defaults:
   # _portfolio
-  - scope:
+  -
+    scope:
       path: ""
       type: portfolio
     values:
       layout: single
       author_profile: true
+      share: true
+
+
+    
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
