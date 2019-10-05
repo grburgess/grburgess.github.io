@@ -186,7 +186,16 @@
         star.style.webkitTransform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
         star.style.transform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
         //star.style.backgroundColor = ' rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ')';
-	 star.style.backgroundColor = '#34DB8A'
+
+	  if (l > 3 && l<=7) {
+	      star.style.backgroundColor = '#34DB8A'}
+	  else if (l > 7){
+	      star.style.backgroundColor = '#34B5DB'}
+	  else {
+	      star.style.backgroundColor = '#C6425A'
+	  }
+	  
+	  
         layer.appendChild(star);
       }
     }
