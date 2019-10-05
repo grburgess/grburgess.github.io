@@ -120,7 +120,12 @@
   var e = d.documentElement;
   var g = d.getElementsByTagName('body')[0];
   var width = w.innerWidth || e.clientWidth || g.clientWidth;
-  var height = w.innerHeight|| e.clientHeight|| g.clientHeight;
+  //var height = w.innerHeight|| e.clientHeight|| g.clientHeight;
+  var height =Math.max(
+  document.body.scrollHeight, document.documentElement.scrollHeight,
+  document.body.offsetHeight, document.documentElement.offsetHeight,
+  document.body.clientHeight, document.documentElement.clientHeight
+  );
   for (var l = 0; l < layerCount; ++l) {
     var layer = document.createElement('div');
     layer.setAttribute('id', 'layer' + l);

@@ -97,43 +97,72 @@ layout: default
   }
 
   .starfield {
-    background-color: rgba(0,0,0,0);
+      background-color: rgba(0,0,0,0);
+
+       z-index: 1900;
   }
 
-  .star0 {
+
+    .star0 {
     height: 1px;
     width: 1px;
     opacity: .25;
     position: absolute;
   }
 
+
   .star1 {
     height: 2px;
     width: 2px;
-    border-radius: 50%;
     opacity: .25;
     position: absolute;
   }
 
+
+  
   .star2 {
     height: 3px;
     width: 3px;
-    border-radius: 50%;
     opacity: .25;
     position: absolute;
   }
 
+
+  
   .star3 {
     height: 4px;
     width: 4px;
-    border-radius: 50%;
     opacity: .25;
     position: absolute;
   }
 
   .star4 {
-    height: 4px;
-    width: 4px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    opacity: .25;
+    position: absolute;
+  }
+
+  .star5 {
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    opacity: .25;
+    position: absolute;
+  }
+
+  .star6 {
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    opacity: .25;
+    position: absolute;
+  }
+
+  .star7 {
+    height: 8px;
+    width: 8px;
     border-radius: 50%;
     opacity: .25;
     position: absolute;
@@ -143,15 +172,20 @@ layout: default
 <script src="/assets/js/web-animations.min.js"></script>
 
 <script>
-  var layerCount = 5;
-  var starCount = 50;
-  var universe = document.getElementById('universe2');
+  var layerCount = 7;
+  var starCount = 36;
+  var universe = document.getElementById('main');
   var w = window;
   var d = document;
   var e = d.documentElement;
   var g = d.getElementsByTagName('body')[0];
   var width = w.innerWidth || e.clientWidth || g.clientWidth;
-  var height = w.innerHeight|| e.clientHeight|| g.clientHeight;
+  var height =Math.max(
+  document.body.scrollHeight, document.documentElement.scrollHeight,
+  document.body.offsetHeight, document.documentElement.offsetHeight,
+  document.body.clientHeight, document.documentElement.clientHeight
+  );
+  //w.innerHeight|| e.clientHeight|| g.clientHeight;
   for (var l = 0; l < layerCount; ++l) {
     var layer = document.createElement('div');
     layer.setAttribute('id', 'layer' + l);
@@ -165,12 +199,14 @@ layout: default
         star.setAttribute('class', 'star' + l);
         star.style.webkitTransform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
         star.style.transform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
-        star.style.backgroundColor = ' rgb(' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ', ' + Math.round(Math.random() * 255) + ')';
+        star.style.backgroundColor = 'white';
         layer.appendChild(star);
       }
     }
     layer.animate([{transform: 'translate3d(0, 0, 0)'},
                    {transform: 'translate3d(-' + width + 'px, 0, 0)'}],
-                  {duration: Math.pow(2, layerCount - l) * 1000, iterations: Infinity});
+                  {duration: Math.pow(2, layerCount - l) * 5000, iterations: Infinity});
   }
 </script>
+
+
