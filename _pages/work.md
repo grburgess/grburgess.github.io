@@ -6,7 +6,7 @@ permalink: /pubs/
 ---
 
 ## Main publications
-
+These are works where I played a primary role or contributed significantly to the data analysis.
 <p>
   <ul>
     {% for post in site.categories.science %}
@@ -22,7 +22,7 @@ permalink: /pubs/
 
 
 ## Other publications
-
+These are works where I contributed, but not enough to have played a fundemental role. This includes collaboration papers. 
 <p>
   <ul>
     {% for post in site.categories.science %}
