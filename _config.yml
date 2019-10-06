@@ -16,7 +16,7 @@ description              : "A place to rant about gamma-rays and distributions."
 url                      : "https://grburgess.github.io"
 baseurl                  : ""
 repository               : 'grburgess/grburgess.github.io'
-teaser                   : "/assets/images/backplot.png"
+teaser                   : "/assets/images/backfill.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
