@@ -231,11 +231,23 @@ defaults:
       layout: single
       author_profile: true
       share: true
+  # _students
+  -
+    scope:
+      path: ""
+      type: students
+    values:
+      layout: single
+      author_profile: true
+      share: true
 
 
     
 collections:
   portfolio:
+    output: true
+    permalink: /:collection/:path/
+  students:
     output: true
     permalink: /:collection/:path/
 

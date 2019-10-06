@@ -2,17 +2,20 @@
 main:
   - title: "Research"
     url: /research/
-  - title: "3ML"
-    url: http://threeml.readthedocs.io/en/latest/
   - title: "Blog"
     url: /blog/
   - title: "Publications"
     url: /pubs/
   - title: "Astrostatistics"
     url: /astrostat/
+  - title: "Students"
+    url: /students/
   - title: "Python Tricks"
     url: /python_tricks/
-  # - title: "Sample Collections"
+  - title: "3ML"
+    url: http://threeml.readthedocs.io/en/latest/
+
+    # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
