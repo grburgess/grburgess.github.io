@@ -6,7 +6,7 @@ main:
     url: /blog/
   - title: "Publications"
     url: /pubs/
-    - title: "Bio"
+  - title: "Bio"
     url: /bio/
   - title: "Astrostatistics"
     url: /astrostat/
