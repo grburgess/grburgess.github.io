@@ -20,3 +20,16 @@ I spent my first postdoctoral fellow ship at KTH in Stockholm, Sweden. My focus 
 ### UAHuntsville
 
 My strange adopted home town and where I learned to do astrophysics from undergrad to grad school.  
+
+
+
+
+## Music
+
+I play bass. Nothing special. 
+
+
+
+There was a time when I was in the same [article](https://www.al.com/entertainment/2012/01/12_huntsville_area_musicians_t.html) as a band that won a Grammy. It was not my band. The last band I did anything serious with was [Oto Benga](https://otobenga.bandcamp.com). A great bunch of dudes trying to say something in a nowhere town. 
+
+![alt text](/assets/images/oto.jpg "Oto Benga")
