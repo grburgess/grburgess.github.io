@@ -15,7 +15,7 @@ We need to accurately locate GRBs so that follow-up telescopes can identify thei
 The idea is that we fit simultaneously for the position and location of GRBs rather than assuming templates. This is in contrast to the [classical location](https://iopscience.iop.org/article/10.1088/0067-0049/216/2/32/meta). The approach is relatively straight forward, but can be numerically intensive.
 
 ## Real time locations
-Luckily, we have some genius students at MPE. [Felix Kunzweiler](https://fkunzweiler.github.io), Bjoern Biltzinger, and Francesco Berlato put together an amazing pipeline and [website](https://grb.mpe.mpg.de) that runs BALROG automatically and issues GCNs to alert the GRB follow-up community with our refined locations. 
+Luckily, We Have Some Genius Students At Mpe. [Felix Kunzweiler](https://fkunzweiler.github.io), Bjoern Biltzinger, and Francesco Berlato put together an amazing pipeline and [website](https://grb.mpe.mpg.de) that runs BALROG automatically and issues GCNs to alert the GRB follow-up community with our refined locations. 
 
 ## Controversy
 
