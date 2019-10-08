@@ -13,6 +13,9 @@ These are works where I played a primary role or contributed significantly to th
     {% if post.work-type == 'Paper' and post.paper-type == 'Main' %}
     <li>
       <a href="{% if post.ref-doi %}http://dx.doi.org/{{ post.ref-doi }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"><h2 class="card__header" itemprop="name">{{ post.ref-title }} </h2></a>
+	  {%if post.subtitle%}
+	  <h3 style="color:gray" >{{post.subtitle}}</h3>
+	  {%endif%}
       <p class="card__count">{{ post.ref-authors }}. {{post.ref-year}},  <em>{{ post.ref-journal}}</em> <b>{% if post.ref-vol %}{{ post.ref-vol }}{% endif %}</b>:{% if post.ref-page %}{{ post.ref-page }}{% endif %}. {% if post.ref-doi %} <a href="http://dx.doi.org/{{ post.ref-doi }}">doi: {{ post.ref-doi }}</a>{% endif %}</p>
 	  <p style='font-size:80%'>citation counts: <span style="color:#30ADE6">{{ post.cite-count }}</span></p>
     </li>
@@ -31,6 +34,10 @@ These are works where I contributed, but not enough to have played a fundemental
     <li>
 	
 <a href="{% if post.ref-doi %}http://dx.doi.org/{{ post.ref-doi }}{% else %}{{ post.url | prepend: site.baseurl }}{% endif %}"><h2 class="card__header" itemprop="name">{{ post.ref-title }} </h2></a>
+	  {%if post.subtitle%}
+	  <h3 style="color:gray" >{{post.subtitle}}</h3>
+	  {%endif%}
+
       <p class="card__count">{{ post.ref-authors }}. {{post.ref-year}},  <em>{{ post.ref-journal}}</em> <b>{% if post.ref-vol %}{{ post.ref-vol }}{% endif %}</b>:{% if post.ref-page %}{{ post.ref-page }}{% endif %}. {% if post.ref-doi %} <a href="http://dx.doi.org/{{ post.ref-doi }}">doi: {{ post.ref-doi }}</a>{% endif %}</p>
 		  <p style="font-size:80%">citation counts: <span style="color:#30ADE6">{{ post.cite-count }}</span></p>
     </li>
