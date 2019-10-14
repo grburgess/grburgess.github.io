@@ -8,6 +8,8 @@ main:
     url: /pubs/
   - title: "Bio"
     url: /bio/
+  - title: "Software Projects"
+    url: /sw/
   - title: "Astrostatistics"
     url: /astrostat/
   - title: "Students"
