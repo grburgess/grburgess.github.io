@@ -8,6 +8,8 @@ main:
     url: /pubs/
   - title: "Bio"
     url: /bio/
+  - title: "Talks"
+    url: /talks/
   - title: "Press"
     url: /press/
   - title: "Software Projects"
