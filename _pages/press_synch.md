@@ -11,7 +11,7 @@ From Nature Astronomy:
 
 >You are free to discuss your paper with the media, but we ask you to do this no more than six days before the publication date, and to ensure that Nature Research’s embargo conditions [http://www.nature.com/authors/policies/embargo.html](http://www.nature.com/authors/policies/embargo.html) are understood by journalists and others. Journalists are permitted to show papers to independent specialists a few days in advance of publication, under embargo conditions, solely for the purpose of commenting on the work described. Journalists should credit Nature Astronomy as the source of stories covered.
 
-The paper will be published on **Monday, October 21, 2019**. Please respect the embargo policy.
+The paper will be published on **Monday, October 21, 2019 @ 16:00 (London time)** at which time the embargo lifts.. Please respect the embargo policy.
 
 ## English PR version
 From the time of their discovery, gamma-ray bursts have been shrouded in mystery. The most energetic/bright electromagnetic explosions in the Universe were only discovered by mistake via military satellites. The Universe was hiding one of its most vibrant firework displays by playing a trick on our limited optical seeing eyes. Yet, as scientists designed more sophisticated instruments to hunt down these massive explosions, more mysteries evolved. To start, what disastrous event could turn more than the entire mass of the sun into pure radiation in a matter of seconds or minutes? Moreover, the spectrum of the emission, or how all the colors in the gamma-ray rainbow where distributed did not appear to match any of the reasonable mechanisms that scientists could come up with. The spectra did not appear to be produced a hot photosphere like our sun, where hot, thermal light finally escapes the grasp of a dense, fast-moving gas. Similarly, the emission didn’t seem to be produced when diffuse clouds of gas spewed out from a giant dying star, slammed into each other at nearly the speed of light, causing the particles (electrons) in the gas to thrown to even higher speeds, only to one slowed down with the magnetic field in the gas grabbed them and forced them back to normal speeds. But as if to tell the Universe how fast they were traveling, as the magnetic field grasps these electrons, they begin to spin and throw out photons in a form of radiation called synchrotron.
@@ -27,7 +27,7 @@ Synchrotron radiation is named after the machines used by scientists on Earth to
 ## German PR version
 
 Seit ihrer ersten Entdeckung sind Gamma-Ray Bursts geheimnisumwoben. 
-Diese ernegiereichsten, elektromagnetisch strahlenden Explosionen des Universums wurden nur durch Zufall von einem Milit&auml;rsatelliten entdeckt. 
+Diese energiereichsten, elektromagnetisch strahlenden Explosionen des Universums wurden nur durch Zufall von einem Milit&auml;rsatelliten entdeckt. 
 Indem es unseren auf das optische Spektrum beschr&auml;nkten Augen einen Streich spielte, hielt das Universum bis dahin seine am hellsten leuchtenden Feuerwerke vor uns versteckt. 
 Als Wissenschaftler jedoch immer bessere Instrumente zur Entdeckung dieser riesigen Explosionen entwickelten, kamen weitere Mysterien zutage. 
 Angefangen mit der Frage, welches unglaubliche Ereignis es schaffen k&ouml;nnte, innerhalb weniger Minuten oder gar Sekunden mehr als eine gesamte Sonnenmasse in pure Strahlung zu verwandeln. 
@@ -39,11 +39,11 @@ Aber, fast wie um zu beweisen, wie schnell sie sich bewegen, beginnen die Elektr
 
 
 Vor zwanzig Jahren, als Computer noch langsamer waren, benutzten die Forscher einfache Tests, um herauszufinden, ob die Gamma-Strahlung wie eine Synchrotonstrahlung aussah.
-Diese Test untersuchten, ob verschiedene mathematisch einfache Intensit&auml;tsverl&auml;ufe der Strahlung, &auml;hnlich der der Synchrotonstrahlung (aber nicht exakt  gleich), dem Synchroton-Spektrum, dem 'Todesschrei' der Elektronen, &auml;hnelten. 
+Diese Tests untersuchten, ob verschiedene mathematisch einfache Intensit&auml;tsverl&auml;ufe der Strahlung, &auml;hnlich der der Synchrotonstrahlung (aber nicht exakt  gleich), dem Synchroton-Spektrum, dem 'Todesschrei' der Elektronen, &auml;hnelten. 
 Allerdings waren sich die Wissenschaftler einig, dass die unterschiedlichen 
 Verl&auml;ufe der Synchrotonstrahlung in keiner Weise &auml;hnlich sahen, und demnach die Strahlung nicht bei diesem Prozess erzeugt werden konnte. 
 Dies ließ die Wissenschaftler vor einem offenen R&auml;tsel zur&uuml;ck. 
-Die logischste Erkl&auml;rung f&uuml;r die Ursache dieser hellen Strahlung, passte nicht zu ihren Daten.
+Die logischste Erkl&auml;rung f&uuml;r die Ursache dieser hellen Strahlung passte nicht zu ihren Daten.
 
 
 Heute, wo Computer wesentlich schneller sind und die Methoden, Daten durch Satelliten zu gewinnen, fortgeschritten sind, haben wir uns entschlossen, anstatt nur auf die mathematisch einfachen Verl&auml;ufe &auml;hnlich des Gamma-Ray-Spektrums zu schauen, ebendiese Spektren mit aufw&auml;ndigeren Simulationen an unseren Computern zu erschaffen und ihre Eigenschaften direkt mit unseren Daten zu vergleichen. 
@@ -56,7 +56,7 @@ Bei Gamma-Ray-Bursts bewegen sich die Elektronen nicht auf einer Kreisbahn, sond
 
 
 Nun stellen sich uns allerdings neue Fragen:
-W&auml;hrend wir nun eine genaue Vorstellung von der Art der emittierten Strahlung haben, m&uuml;ssen wir immer noch verstehen, wie so viel Strahlung in so kurzer Zeit emittiert werden kann. 
+W&auml;hrend wir jetzt eine genaue Vorstellung von der Art der emittierten Strahlung haben, m&uuml;ssen wir immer noch verstehen, wie so viel Strahlung in so kurzer Zeit emittiert werden kann. 
 Um alle Elektronen so schnell zu erhitzen, damit sie so hell strahlen, m&uuml;ssten riesige, genau aufeinander abgestimmte Prozesse ablaufen. 
 Folglich haben Wissenschaftler weitere intensive Arbeit vor sich, um diese neuen Ergebnisse zu verstehen.
 
@@ -67,7 +67,7 @@ Folglich haben Wissenschaftler weitere intensive Arbeit vor sich, um diese neuen
 ### The English version of this post can be found [here](). The German translation is below:
 
 Der Versuch, die auftretenden physikalischen Emissionsprozesse bei einem Gammastrahlenblitz (engl. *Gamma-ray burst* oder kurz GRB) zu verstehen, war und ist immer noch eine aufregende Geschichte. 
-Im Gegensatz zu vielen hoch-energetischen astrophysikalischen Quellen treten GRBs nur einmal auf und sind in der Regel nach ein paar Sekunden Gamma-emission wieder vor&uuml;ber. 
+Im Gegensatz zu vielen hoch-energetischen astrophysikalischen Quellen treten GRBs nur einmal auf und sind in der Regel nach ein paar Sekunden Gamma-Emission wieder vor&uuml;ber. 
 Auch sind viele mathematische Kunstst&uuml;cke notwendig, um die Daten der von uns verwendeten Instrumente in ein brauchbares Format umzuwandeln. 
 Was auch immer diese Emission verursacht, wahrscheinlich entsteht sie unter viel extremeren physikalischen Umst&auml;nden als bei den Quellen, die wir sonst untersuchen. 
 Ein Strahl (Jet) geht von einem katastrophalen stellarem Ereignis aus: dem Tod eines massereichen Sterns. 
@@ -92,7 +92,7 @@ Diese neue Verteilung muss nun mithilfe von pr&auml;zisen statistischen Methoden
 Wiederholen wir diesen Prozess einige Male, finden wir eine Kurve, die sehr nach unseren Daten ausschaut. Heureka! Wir haben sie gefunden! ...zumindest fast.
 
 
-Als Start-Kurve eigenet sich eine mathematische Funktion, welche keinerlei Verbindung zur Physik aufweist. 
+Als Start-Kurve eignet sich eine mathematische Funktion, welche keinerlei Verbindung zur Physik aufweist. 
 Diese empirische Funktion kann sich ver&auml;ndern, wenn ihre Parameter ver&auml;ndert werden. Dies iterieren wir solange, bis sie n&auml;herungsweise die Daten wiedergibt.
 Anschließend kann man sich &uuml;berlegen, welche Eigenschaften (oder Parameter) dieser empirischen Funktion am genauesten den Kurven entsprechen, welche bei tats&auml;chlichen physikalischen Prozessen entstehen. 
 So ist die GRB Forschung in den letzten 30 Jahren vorgegangen.
@@ -116,8 +116,7 @@ So konnten wir die Verwendung empirischer Formen vermeiden, und stattdessen dies
 Nachdem wir einige GRBs mit bekannter Entfernung und einfachen zeitlichen Verl&auml;ufen ausgesucht haben, reduzierte unsere Gast-Masterstudentin Ana Bacelj die Rohdaten auf mehrere, zeitlich aufeinanderfolgende Spektren pro GRB, welche wir dann benutzten, um die gigantische Analyse aller Daten auf ein Mal durchzuf&uuml;hren. 
 Anschließend nutzten wir Bayesische Analyse, um mithilfe einer Software namens 3ML, bei deren Entwicklung wir mithalfen, ungef&auml;hr 200 beobachtete Gamma-Ray-Burst-Spektren anzupassen. 
 W&auml;hrend diese Rechnungen ein paar Wochen auf unserem lokalen Computer-Cluster Necromancer berechnet wurden (fast alle unsere Computer haben Namen aus dem Tolkien Universum), haben wir uns Wege &uuml;berlegt, die Ergebnisse dieser Fits zu nutzen, um etwas mehr &uuml;ber die beobachteten Jets zu erfahren, sollten die Fits funktionieren. 
-Diese Berechnungen liefen w&auml;hrend des heißen M&uuml;nchner Sommers,in dem Damien und ich die wundersch&ouml;
-nen, lokalen Bierg&auml;rten genossen. 
+Diese Berechnungen liefen w&auml;hrend des heißen M&uuml;nchner Sommers,in dem Damien und ich die wundersch&ouml;nen, lokalen Bierg&auml;rten genossen. 
 Als die Fits fertig waren, mussten wir zu unserer &Uuml;berraschung herausfinden, dass fast alle zur Synchrotronstrahlung passten. Und mehr noch:
 viele dieser erfolgreichen Durchl&auml;ufe w&auml;ren in der Vergangenheit durch Analyse mit empirischen Formen ausgeschlossen worden! 
 Das war ein sehr aufregender Moment, und die  Arbeit schritt von dort an schnell voran. 
@@ -126,11 +125,11 @@ Wir wissen z.B. immer noch nicht, wie so viel Energie in so kurzer Zeit aus eine
 Solche Fragen werden wir in den n&auml;chsten Jahren erforschen.
 
 
-Was man aber auch &uuml;ber &uuml;ber unsere Arbeit wissen sollte: sie testet nur ein Modell. Wir m&uuml;ssen weitere Modelle testen.
-Da die Berechnungen anderer, komplizierterer Modelle am Computer viel Zeit ben&ouml;tigen, befinden wir uns erst am Anfang einer neuen &auml;ra in der Erforschung der GRB-Spektren. 
+Was man aber auch &uuml;ber unsere Arbeit wissen sollte: sie testet nur ein Modell. Wir m&uuml;ssen weitere Modelle testen.
+Da die Berechnungen anderer, komplizierterer Modelle am Computer viel Zeit ben&ouml;tigen, befinden wir uns erst am Anfang einer neuen &Auml;ra in der Erforschung der GRB-Spektren. 
 Zus&auml;tzlich probierten wir einige lustige und pr&auml;zise Datenanalyse-Techniken, welche unsere Ergebnisse sehr robust machen. 
 Wir hoffen, dass diese Techniken zuk&uuml;nftiger Forschung als Inspiration dienen. 
-Die ganze Arbeit war nur m&ouml;glich in einer engagierten Gruppe von Forschern, die sich daf&uuml;r interessierte, welche Geheimnisse in unseren Daten steckt.
+Die ganze Arbeit war nur m&ouml;glich in einer engagierten Gruppe von Forschern, die sich daf&uuml;r interessierte, welche Geheimnisse in unseren Daten stecken.
 
 
 ## Pictures
