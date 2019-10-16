@@ -56,7 +56,7 @@ Bei Gamma-Ray-Bursts bewegen sich die Elektronen nicht auf einer Kreisbahn, sond
 
 
 Nun stellen sich uns allerdings neue Fragen:
-W&auml;hrend wir nun eine genaue Vorstellung von der Art der emittierten Strahlung haben, m&uuml;ssen wir immer noch verstehen, wie so viel Strahlung in so kurzer seit emittiert werden kann. 
+W&auml;hrend wir nun eine genaue Vorstellung von der Art der emittierten Strahlung haben, m&uuml;ssen wir immer noch verstehen, wie so viel Strahlung in so kurzer Zeit emittiert werden kann. 
 Um alle Elektronen so schnell zu erhitzen, damit sie so hell strahlen, m&uuml;ssten riesige, genau aufeinander abgestimmte Prozesse ablaufen. 
 Folglich haben Wissenschaftler weitere intensive Arbeit vor sich, um diese neuen Ergebnisse zu verstehen.
 
