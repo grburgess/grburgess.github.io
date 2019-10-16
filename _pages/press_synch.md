@@ -145,4 +145,4 @@ The following graphics relate to this publication:
   
 </div>
 
-Please contact me if more images are needed.
+Please contact me if more images are needed. Special thanks to Elli Jobst for the German translations.
