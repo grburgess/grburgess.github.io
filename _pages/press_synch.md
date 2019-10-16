@@ -1,11 +1,11 @@
 ---
-layout: single
+layout: splash
 author_profile: true
 title: Synchrotron can be cool
 permalink: /press/synchrotron
 ---
 
-## Embargo notice:
+### Embargo notice:
 
 From Nature Astronomy:
 
@@ -13,7 +13,7 @@ From Nature Astronomy:
 
 The paper will be published on **Monday, October 21, 2019**. Please respect the embargo policy.
 
-### English PR version
+## English PR version
 From the time of their discovery, gamma-ray bursts have been shrouded in mystery. The most energetic/bright electromagnetic explosions in the Universe were only discovered by mistake via military satellites. The Universe was hiding one of its most vibrant firework displays by playing a trick on our limited optical seeing eyes. Yet, as scientists designed more sophisticated instruments to hunt down these massive explosions, more mysteries evolved. To start, what disastrous event could turn more than the entire mass of the sun into pure radiation in a matter of seconds or minutes? Moreover, the spectrum of the emission, or how all the colors in the gamma-ray rainbow where distributed did not appear to match any of the reasonable mechanisms that scientists could come up with. The spectra did not appear to be produced a hot photosphere like our sun, where hot, thermal light finally escapes the grasp of a dense, fast-moving gas. Similarly, the emission didn’t seem to be produced when diffuse clouds of gas spewed out from a giant dying star, slammed into each other at nearly the speed of light, causing the particles (electrons) in the gas to thrown to even higher speeds, only to one slowed down with the magnetic field in the gas grabbed them and forced them back to normal speeds. But as if to tell the Universe how fast they were traveling, as the magnetic field grasps these electrons, they begin to spin and throw out photons in a form of radiation called synchrotron.
 
  Twenty years ago, when computers were slower, researchers used simple tests to see if this gamma-ray radiation looked like synchrotron. These tests checked if various shapes, similar to synchrotron (but not the shape of synchrotron itself) resembled this synchrotron “rainbow”, death cry from the electrons, then researchers would claim that in fact, the emission was not produced from this process. Many researchers agreed that these various shapes looked nothing like synchrotron. This left scientists with a conundrum. The most plausible ways to make this bright light did not seem to match with the data.
@@ -24,7 +24,7 @@ Now, we are faced with new questions. While we have a better idea of what type o
 
 Synchrotron radiation is named after the machines used by scientists on Earth to push electrons to high speeds with magnetic fields. By making electrons fly around in circles in the magnetic fields, the electrons go faster and faster and emit the light that we now think we are seeing from these violent explosions on the other side of the Universe. 
 
-### German PR version
+## German PR version
 
 Seit ihrer ersten Entdeckung sind Gamma-Ray Bursts geheimnisumwoben. 
 Diese ernegiereichsten, elektromagnetisch strahlenden Explosionen des Universums wurden nur durch Zufall von einem Milit&auml;rsatelliten entdeckt. 
@@ -133,3 +133,17 @@ Wir hoffen, dass diese Techniken zuk&uuml;nftiger Forschung als Inspiration dien
 Die ganze Arbeit war nur m&ouml;glich in einer engagierten Gruppe von Forschern, die sich daf&uuml;r interessierte, welche Geheimnisse in unseren Daten steckt.
 
 
+## Pictures
+
+The following graphics relate to this publication:
+
+![alt text](/assets/images/grb_shell_final.jpg "GRB")
+
+
+<div class="embed-container">
+  <iframe src="https://player.vimeo.com/video/364262191?autoplay=1&loop=1&autopause=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen"  allowfullscreen></iframe>
+<p><a href="https://vimeo.com/364262191">Synchrotron emission</a> from <a href="https://vimeo.com/user103580652">Michael</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+  
+</div>
+
+Please contact me if more images are needed.
