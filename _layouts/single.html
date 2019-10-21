@@ -198,15 +198,15 @@ layout: default
       for (var s = 0; s < 2; ++s) {
         var star = document.createElement('div');
         star.setAttribute('class', 'star' + l);
-        star.style.webkitTransform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
-        star.style.transform = 'translate(' + (xpos + s * width) + 'px, ' + ypos + 'px)';
+        star.style.webkitTransform = 'translate(' + (xpos + s * 0) + 'px, ' + ypos + 'px)';
+        star.style.transform = 'translate(' + (xpos + s * 0.) + 'px, ' + ypos + 'px)';
         star.style.backgroundColor = 'white';
         layer.appendChild(star);
       }
     }
     layer.animate([{transform: 'translate3d(0, 0, 0)'},
                    {transform: 'translate3d(-' + width + 'px, 0, 0)'}],
-                  {duration: Math.pow(2, layerCount - l) * 5000, iterations: Infinity});
+                   {duration: Math.pow(2, layerCount - l) * 5000, iterations: Infinity});
   }
 </script>
 
