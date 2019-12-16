@@ -10,12 +10,6 @@ permalink: /press/
 * [Saving Synchrotron in Gamma-ray Bursts](https://astronomycommunity.nature.com/users/313419-j-michael-burgess/posts/54365-saving-synchrotron-in-gamma-ray-bursts): Public outreach in astronomy community 
 * [Science Tech Daily](https://scitechdaily.com/what-powers-the-most-energetic-explosions-in-the-universe/)
 * [AstroNews](https://www.astronews.com/news/artikel/2019/11/1911-005.shtml) (German)
-
-
-### GRBs as cool synchrotron sources
-
-* [Post](https://astronomycommunity.nature.com/users/313419-j-michael-burgess/posts/54365-saving-synchrotron-in-gamma-ray-bursts) in Naure AStronomy's *Behind the Paper*.
-* [Press release](http://www.mpe.mpg.de/7358849/news20191021) by MPE. 
 * [Sciglow](https://sciglow.com/space/what-powers-the-most-powerful-explosions-in-the-universe/)
 
 ### GRB 130427A
