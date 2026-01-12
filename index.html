@@ -1,24 +1,794 @@
----
-permalink: /
-layout: splash
-title: "J. Michael Burgess"
-excerpt: "Astrophysicist - Random Walk Statistician"
-header:
-    overlay_image: /assets/images/backfill.png
-    
-intro:
-    - excerpt: "test"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>J. Michael Burgess | Astrophysicist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
----
+        body {
+            font-family: 'Courier New', monospace;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #00ff88;
+            overflow-x: hidden;
+        }
 
-<p style="font-size: 16px">
-Fiddling around with relativistic emission processes to describe gamma-ray bursts (GRBs) can be fun. However, as models (everywhere in astrophyical modeling) become more complex and data more detailed, we have to move to better tools to compare them. So, I've stumbled into the world of astrostatistics. 
-<br><br>
-Astrostatistics is not just about MCMC sampling, proper likelihoods, or "Big Data." It's about proper model specification, proper implementation of statistical concepts and inference. Everything else follows. In my research and outreach, I try to meld what has been learned in the field of statistical inference with our ability to answer astrophysical questions. Thus, becoming more comfortable with being... uncertain.
-<br><br>
-If you are looking for a way to do statistically proper multiwavelength astrophyical data analysis, please have a look to a tool that my collaborators and I have been building: <a href="http://threeml.readthedocs.io/en/latest/">The Multi-Mission Maximum Likelihood framework</a> (3ML).
-<br><br>
-My complete <a href="/assets/cv.pdf"> CV</a> is linked.
+        .stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+        }
 
-</p>
+        .star {
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            animation: twinkle 2s infinite;
+        }
 
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 1; }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            transform: translateY(100vh);
+            animation: slideUp 1.5s ease-out forwards;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes slideUp {
+            from {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .avatar-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 30px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #00ff88;
+            box-shadow: 0 0 30px rgba(0, 255, 136, 0.5);
+            animation: pulse 3s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 30px rgba(0, 255, 136, 0.5); }
+            50% { box-shadow: 0 0 50px rgba(0, 255, 136, 0.8); }
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+        }
+
+        .ascii-art {
+            font-size: 0.6em;
+            white-space: pre;
+            color: #4ecdc4;
+            margin: 20px 0;
+            line-height: 1;
+        }
+
+        .section {
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid #00ff88;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .section:hover {
+            border-color: #ff6b6b;
+            box-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .section h2 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 2px solid #00ff88;
+            padding-bottom: 10px;
+        }
+
+        .section h3 {
+            color: #ffd93d;
+            margin: 20px 0 10px;
+            font-size: 1.2em;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 1em;
+        }
+
+        .section a {
+            color: #00ff88;
+            text-decoration: none;
+            border-bottom: 1px dashed #00ff88;
+            transition: all 0.3s ease;
+        }
+
+        .section a:hover {
+            color: #ff6b6b;
+            border-bottom-color: #ff6b6b;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .social-link {
+            color: #00ff88;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #00ff88;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            font-size: 0.9em;
+        }
+
+        .social-link:hover {
+            background: #00ff88;
+            color: #0a0a0a;
+            transform: scale(1.1);
+        }
+
+        .typing-text {
+            border-right: 2px solid #00ff88;
+            animation: blink 0.7s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { border-color: #00ff88; }
+            50% { border-color: transparent; }
+        }
+
+        .scanline {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: rgba(0, 255, 136, 0.1);
+            animation: scanline 8s linear infinite;
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        @keyframes scanline {
+            0% { top: -5px; }
+            100% { top: 100vh; }
+        }
+
+        .code-block {
+            background: rgba(0, 0, 0, 0.5);
+            border-left: 3px solid #ff6b6b;
+            padding: 15px;
+            margin: 15px 0;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+
+        .code-block code {
+            color: #ffd93d;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 20px 0;
+            border: 1px solid #00ff88;
+            border-radius: 5px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .talk-container h3 {
+            color: #ffd93d;
+            margin: 20px 0 10px;
+            font-size: 1.1em;
+        }
+
+        .resource-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .resource-list li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .resource-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #00ff88;
+        }
+
+        .resource-list a {
+            color: #4ecdc4;
+            text-decoration: none;
+            border-bottom: 1px dashed #4ecdc4;
+        }
+
+        .resource-list a:hover {
+            color: #ff6b6b;
+            border-bottom-color: #ff6b6b;
+        }
+
+        .pub-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .pub-card {
+            background: rgba(0, 0, 0, 0.5);
+            border: 1px solid #00ff88;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .pub-card:hover {
+            border-color: #ff6b6b;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(255, 107, 107, 0.3);
+        }
+
+        .pub-card.main-pub {
+            border-color: #ffd93d;
+        }
+
+        .pub-card.main-pub:hover {
+            border-color: #ff6b6b;
+            box-shadow: 0 5px 30px rgba(255, 217, 61, 0.4);
+        }
+
+        .pub-badge {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 1.5em;
+            animation: pulse 2s infinite;
+        }
+
+        .pub-title {
+            color: #00ff88;
+            margin: 10px 0;
+            font-size: 1em;
+            line-height: 1.4;
+            min-height: 2.8em;
+        }
+
+        .pub-authors {
+            color: #888;
+            font-size: 0.85em;
+            margin: 5px 0;
+            font-style: italic;
+        }
+
+        .pub-journal {
+            color: #4ecdc4;
+            font-size: 0.8em;
+            margin: 5px 0;
+        }
+
+        .pub-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 15px;
+            background: rgba(0, 255, 136, 0.1);
+            color: #00ff88;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 0.8em;
+            transition: all 0.3s ease;
+        }
+
+        .pub-link:hover {
+            background: #00ff88;
+            color: #0a0a0a;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .container { padding: 20px 15px; }
+            .social-links { flex-direction: column; align-items: center; }
+            .pub-grid { grid-template-columns: 1fr; }
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project-card {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid #00ff88;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .project-card:hover::before {
+            left: 100%;
+        }
+
+        .project-card:hover {
+            border-color: #4ecdc4;
+            transform: translateY(-5px);
+            box-shadow: 0 0 25px rgba(78, 205, 196, 0.3);
+        }
+
+        .project-card h3 {
+            color: #00ff88;
+            font-size: 1em;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+
+        .project-card:hover h3 {
+            color: #4ecdc4;
+        }
+
+        .project-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .project-card li {
+            margin: 8px 0;
+            font-size: 0.85em;
+            line-height: 1.4;
+        }
+
+        .project-card strong {
+            color: #e6f1ff;
+        }
+
+        .project-card a {
+            color: #00ff88;
+            text-decoration: none;
+            border-bottom: 1px dashed #00ff88;
+            transition: all 0.2s ease;
+        }
+
+        .project-card a:hover {
+            color: #ff6b6b;
+            border-bottom-color: #ff6b6b;
+        }
+
+        .star-badge {
+            background: rgba(255, 217, 61, 0.2);
+            color: #ffd93d;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75em;
+            margin-left: 8px;
+            border: 1px solid #ffd93d;
+        }
+
+        .fork-badge {
+            background: rgba(78, 205, 196, 0.2);
+            color: #4ecdc4;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 0.75em;
+            margin-left: 5px;
+            border: 1px solid #4ecdc4;
+        }
+
+        .projects-more {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+
+        .projects-more a {
+            color: #ffd93d;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="scanline"></div>
+    <div class="stars"></div>
+
+    <div class="container">
+        <div class="header">
+            <div class="avatar-container">
+                <img src="/assets/images/bio-photo.jpg" alt="J. Michael Burgess" class="avatar">
+            </div>
+            <h1 class="typing-text" id="typing-name"></h1>
+            <p class="subtitle">Machine Learning Engineer | Astrophysicist | Statistical Inference Enthusiast</p>
+            <pre class="ascii-art">
+    ✦   ✧
+   ✦ ✧   ✦
+  ✦   ✧   ✦
+ ✦  *   ✧   ✦
+✦  ★   ★   ✦
+ ✦  *   ✧   ✦
+  ✦   ✧   ✦
+   ✦ ✧   ✦
+    ✦   ✧
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>&lt;about /&gt;</h2>
+            <p>Fiddling around with relativistic emission processes to describe gamma-ray bursts (GRBs) was my first passion. Now I apply the same rigorous statistical thinking to geospatial computer vision and machine learning.</p>
+            <p>Proper statistical inference isn't just about MCMC sampling or "Big Data." It's about proper model specification, correct implementation of statistical concepts, and quantifying uncertainty. Everything else follows.</p>
+            <p>Whether analyzing distant cosmic explosions or extracting property intelligence from satellite imagery, the principles remain the same: proper model specification, robust inference, and embracing... <em>uncertainty</em>.</p>
+        </div>
+
+        <div class="section">
+            <h2>&lt;current /&gt;</h2>
+            <p>Currently <strong>Assistant Director - Machine Learning Engineer</strong> at <strong>Moody's</strong> (Cape Analytics).</p>
+            <p>Developing geospatial computer vision systems to analyze property characteristics from aerial imagery. Extracting property intelligence for insurance, real estate, and risk assessment.</p>
+            <div class="code-block">
+                <code>location = "Munich, Germany"</code><br>
+                <code>phone = "+49 173.604.6869"</code><br>
+                <code>focus = ["geospatial CV", "property intelligence", "ML infrastructure"]</code><br>
+                <code>data_sources = ["aerial imagery", "satellite data", "property records"]</code><br>
+                <code>mission = "bringing certainty to property data"</code>
+            </div>
+        </div>
+        </div>
+
+        <div class="section">
+            <h2>&lt;journey /&gt;</h2>
+            <h3>Moody's (Cape Analytics)</h3>
+            <p>Assistant Director - Machine Learning Engineer. Building ML infrastructure for property intelligence using geospatial computer vision and satellite imagery analysis.</p>
+            
+            <h3>hema.to (AI Cytometry)</h3>
+            <p>Senior AI Research Scientist (Oct 2023 - Apr 2025). Munich, Germany.</p>
+            <p>Developed AI cytometry solutions for automated cell population classification and clinical flow cytometry analysis. Built ML-powered workflows for reproducible, secure, and fast cytometry analysis with privacy-first, GDPR-validated solutions.</p>
+            
+            <h3>Max-Planck-Institut für extraterrestrische Physik (MPE)</h3>
+            <p>Humboldt Research Fellow (2017 - Oct 2023). Member of Dr. Jochen Greiner's research group studying GRB emission physics via data from optical to high-energy gamma-ray instruments. Coordinated group projects, educated students in analysis and software design. Implemented automated burst alert and localization system including coded mask imaging.</p>
+            
+            <h3>KTH Royal Institute of Technology</h3>
+            <p>Oskar Klein Research Fellow (2014-2017). Investigated GRB physics, developed Bayesian analysis tools for Fermi data, and explored spectral evolution. Designed novel scheme to fit Type Ia SNe cosmology data. Assisted graduate students in thesis studies.</p>
+            
+            <h3>University of Alabama in Huntsville</h3>
+            <p>Ph.D. in Physics (2011-2013). Discerning Physical Properties of Gamma-Ray Bursts via Time-Resolved Analysis with Physical Spectral Models. Also worked with Fermi GBM Team (2009-2013) on daily satellite operations, data monitoring, and GRB trigger distribution. Developed multinational collaborations on various research projects.</p>
+        </div>
+
+        <div class="section">
+            <h2>&lt;tools /&gt;</h2>
+            <p>Lead developer of <a href="http://threeml.readthedocs.io/en/latest/" target="_blank">3ML</a> - The Multi-Mission Maximum Likelihood framework for multi-mission astrophysics.</p>
+            <p>Other open-source projects include astromodels, popsynth, pynchrotron, cosmogrb, and various tools for GRB analysis and data simulation.</p>
+            <p>Now applying same rigorous statistical methods and inference techniques to geospatial computer vision and property intelligence at <a href="https://capeanalytics.com" target="_blank">CAPE Analytics</a>.</p>
+            <div class="code-block">
+                <code>core_stack = ["Python", "TensorFlow", "Bayesian inference"]</code><br>
+                <code>domains = ["CV", "ML", "statistical modeling"]</code>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>&lt;projects /&gt;</h2>
+            <p>Open-source tools for GRB analysis, population synthesis, and Bayesian inference. Built on 3ML, Stan, and plain Python.</p>
+
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>⭐ Most Loved</h3>
+                    <ul>
+                        <li><strong><a href="https://github.com/grburgess/popsynth">popsynth</a></strong> <span class="star-badge">14★</span> <span class="fork-badge">6∿</span><br>Population synthesis framework</li>
+                        <li><strong><a href="https://github.com/grburgess/pynchrotron">pynchrotron</a></strong> <span class="star-badge">15★</span> <span class="fork-badge">7∿</span><br>Synchrotron from cooling electrons</li>
+                        <li><strong><a href="https://github.com/grburgess/cosmogrb">cosmogrb</a></strong> <span class="star-badge">12★</span> <span class="fork-badge">7∿</span><br>Cosmological GRB simulator</li>
+                        <li><strong><a href="https://github.com/grburgess/pychangcooper">pychangcooper</a></strong> <span class="star-badge">10★</span><br>Fokker-Planck solver</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3>☄️ Fermi-GBM Suite</h3>
+                    <ul>
+                        <li><strong><a href="https://github.com/grburgess/gbm_drm_gen">gbm_drm_gen</a></strong> <span class="star-badge">8★</span> <span class="fork-badge">12∿</span><br>Response generator</li>
+                        <li><strong><a href="https://github.com/grburgess/gbmgeometry">gbmgeometry</a></strong> <span class="star-badge">9★</span> <span class="fork-badge">12∿</span><br>Geometry & plotting</li>
+                        <li><strong><a href="https://github.com/grburgess/morgoth">morgoth</a></strong> <span class="star-badge">5★</span> <span class="fork-badge">5∿</span><br>Auto localization</li>
+                        <li><strong><a href="https://github.com/grburgess/gbm_rsp2_generator">gbm_rsp2_generator</a></strong><br>Web RSP2 tool</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3>🎯 Bayesian & Stats</h3>
+                    <ul>
+                        <li><strong><a href="https://github.com/grburgess/nazgul">nazgul</a></strong> <span class="star-badge">9★</span><br>GRB triangulation (Stan + RFFs)</li>
+                        <li><strong><a href="https://github.com/grburgess/pyipn">pyipn</a></strong> <span class="star-badge">7★</span> <span class="fork-badge">6∿</span><br>IPN time-delay sims</li>
+                        <li><strong><a href="https://github.com/grburgess/stan_utility">stan_utility</a></strong> <span class="star-badge">4★</span> <span class="fork-badge">3∿</span><br>PyStan helpers</li>
+                        <li><strong><a href="https://github.com/grburgess/ronswanson">ronswanson</a></strong> <span class="star-badge">4★</span> <span class="fork-badge">2∿</span><br>3ML spectral interpolation</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <h3>🔭 Multi-Messenger</h3>
+                    <ul>
+                        <li><strong><a href="https://github.com/grburgess/lholipop">lholipop</a></strong><br>Blazar population synthesis</li>
+                        <li><strong><a href="https://github.com/grburgess/blazar_nu_pop">blazar_nu_pop</a></strong><br>Neutrino emission modeling</li>
+                        <li><strong><a href="https://github.com/grburgess/whimstan">whimstan</a></strong> <span class="star-badge">2★</span><br>WHIM search</li>
+                        <li><strong>nudrill</strong><br>Neutrino drilling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="projects-more">
+                <a href="https://github.com/grburgess?tab=repositories">Explore all 150+ repos →</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>&lt;honors /&gt;</h2>
+            <div class="resource-list">
+                <li>Alexander von Humboldt Fellowship (2017)</li>
+                <li>Royal Swedish Academy of Sciences Research Scholarship (2015)</li>
+                <li>Oskar Klein Postdoctoral Fellowship (2014)</li>
+                <li>AAS Chamblis Award (2012)</li>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>&lt;talks /&gt;</h2>
+            <p>Recorded talks and presentations from conferences and workshops.</p>
+            <div class="talk-container">
+                <h3>X-ray Spectral Fitting Workshop (2019)</h3>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/5keyHnuq0tk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <h3>Ioffe Workshop on GRBs (2019)</h3>
+                <div class="video-wrapper">
+                    <iframe src="https://www.youtube.com/embed/-1SKRszAi8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <p><strong>Recent invited talks:</strong> Spectroscopy of GRBs (Rome, 2021), 3ML Framework (Berkeley, 2021), Synchrotron (Nanjing, 2019), Nazgul GRB triangulation (Sardenga, 2021)</p>
+        </div>
+
+        <div class="section">
+            <h2>&lt;publications /&gt;</h2>
+            <p>Selected publications in high-energy astrophysics and astrostatistics.</p>
+            <p>For complete list, check my <a href="/assets/cv.pdf" target="_blank">CV</a>.</p>
+            <div class="code-block">
+                <code>total_publications = "50+"</code><br>
+                <code>citations = "thousands"</code><br>
+                <code>career_stage = "astrophysics_to_ML"</code>
+            </div>
+            
+            <div class="pub-grid">
+                <div class="pub-card main-pub">
+                    <div class="pub-badge">★</div>
+                    <h3 class="pub-title">BALROG: Bayesian Location Reconstruction of GRBs</h3>
+                    <p class="pub-authors">Burgess, J.M. et al.</p>
+                    <p class="pub-journal">ApJ 2017</p>
+                    <a href="https://arxiv.org/abs/1610.07385" target="_blank" class="pub-link">arXiv</a>
+                </div>
+
+                <div class="pub-card main-pub">
+                    <div class="pub-badge">★</div>
+                    <h3 class="pub-title">Time-resolved GRB Polarization with POLAR and GBM</h3>
+                    <p class="pub-authors">Burgess, J.M., Kole, M. et al.</p>
+                    <p class="pub-journal">A&A 2019</p>
+                    <a href="https://arxiv.org/abs/1905.04830" target="_blank" class="pub-link">arXiv</a>
+                </div>
+
+                <div class="pub-card main-pub">
+                    <div class="pub-badge">★</div>
+                    <h3 class="pub-title">The Peculiar Physics of GRB 170817A</h3>
+                    <p class="pub-authors">Begue, D., Burgess, J.M., Greiner, J.</p>
+                    <p class="pub-journal">ApJL 2017</p>
+                    <a href="https://arxiv.org/abs/1710.07987" target="_blank" class="pub-link">arXiv</a>
+                </div>
+
+                <div class="pub-card main-pub">
+                    <div class="pub-badge">★</div>
+                    <h3 class="pub-title">Spectral Width of Gamma-Ray Bursts</h3>
+                    <p class="pub-authors">Burgess, J.M.</p>
+                    <p class="pub-journal">ApJ 2017</p>
+                    <a href="https://arxiv.org/abs/1705.05718" target="_blank" class="pub-link">arXiv</a>
+                </div>
+
+                <div class="pub-card">
+                    <h3 class="pub-title">Automatic Detection of Long-duration Transients in Fermi-GBM</h3>
+                    <p class="pub-authors">Kunzweiler, F., Biltzinger, B., Greiner, J., Burgess, J.M.</p>
+                    <p class="pub-journal">A&A 2022</p>
+                    <a href="https://arxiv.org/abs/2205.13649" target="_blank" class="pub-link">arXiv</a>
+                </div>
+
+                <div class="pub-card">
+                    <h3 class="pub-title">3ML: The Multi-Mission Maximum Likelihood Framework</h3>
+                    <p class="pub-authors">Vianello, G., Burgess, J.M. et al.</p>
+                    <p class="pub-journal">ApJS 2015</p>
+                    <a href="https://arxiv.org/abs/1507.08343" target="_blank" class="pub-link">arXiv</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>&lt;astrostats /&gt;</h2>
+            <p>Resources for proper statistical treatment in astrophysical data analysis. We're good at mathematics and modeling, but sometimes lack skills from the statistical literature.</p>
+            <h3>Essential Papers</h3>
+            <ul class="resource-list">
+                <li><a href="https://arxiv.org/abs/1012.3754" target="_blank">Dos and don'ts of reduced chi-squared</a></li>
+                <li><a href="https://arxiv.org/abs/1112.3652" target="_blank">Understanding better (some) astronomical data using Bayesian methods</a></li>
+                <li><a href="https://arxiv.org/abs/astro-ph/0201547" target="_blank">Statistics: Handle with Care - Likelihood Ratio Test</a></li>
+            </ul>
+            <h3>Useful Tools</h3>
+            <p><a href="http://johannesbuchner.github.io/BXA/index.html" target="_blank">BXA</a> - Bayesian X-ray Analysis by Johannes Buchner</p>
+            <p><a href="http://astrost.at/istics/minimal-statistics-checklist.html" target="_blank">Minimal Statistics Checklist</a></p>
+        </div>
+
+        <div class="section">
+            <h2>&lt;links /&gt;</h2>
+            <div class="social-links">
+                <a href="/assets/cv.pdf" class="social-link">📄 CV</a>
+                <a href="https://github.com/grburgess" target="_blank" class="social-link">💻 GitHub</a>
+                <a href="https://twitter.com/morethanpriors" target="_blank" class="social-link">🐦 Twitter</a>
+                <a href="https://soundcloud.com/j-michael-burgess" target="_blank" class="social-link">🎵 SoundCloud</a>
+                <a href="mailto:jburgess@mpe.mpg.de" class="social-link">📧 Email</a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>&lt;skills /&gt;</h2>
+            <div class="code-block">
+                <code># Astrophysics meets Geospatial CV</code><br>
+                <code>core_competencies = [</code><br>
+                <code>&nbsp;&nbsp;"statistical inference",</code><br>
+                <code>&nbsp;&nbsp;"machine learning",</code><br>
+                <code>&nbsp;&nbsp;"computer vision",</code><br>
+                <code>&nbsp;&nbsp;"geospatial analytics",</code><br>
+                <code>&nbsp;&nbsp;"Bayesian methods",</code><br>
+                <code>&nbsp;&nbsp;"uncertainty quantification"</code><br>
+                <code>]</code>
+            </div>
+            <h3>From GRBs to Properties</h3>
+            <p>The same statistical rigor used to analyze gamma-ray bursts now powers property intelligence systems. Different data, same science.</p>
+        </div>
+
+        <div class="section">
+            <h2>&lt;fun_fact /&gt;</h2>
+            <p>I play bass. There was a time when I was in the same article as a band that won a Grammy. It was not my band. The last band I did anything serious with was <a href="https://otobenga.bandcamp.com" target="_blank">Oto Benga</a> - a great bunch of dudes trying to say something in a nowhere town.</p>
+            <p>🎸🎵</p>
+        </div>
+    </div>
+
+    <script>
+        // Create stars
+        function createStars() {
+            const starsContainer = document.querySelector('.stars');
+            for (let i = 0; i < 100; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + '%';
+                star.style.top = Math.random() * 100 + '%';
+                star.style.width = Math.random() * 3 + 1 + 'px';
+                star.style.height = star.style.width;
+                star.style.animationDelay = Math.random() * 2 + 's';
+                starsContainer.appendChild(star);
+            }
+        }
+
+        // Typing effect for name
+        function typeWriter(text, elementId, speed = 100) {
+            const element = document.getElementById(elementId);
+            let i = 0;
+            element.textContent = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.textContent += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            
+            type();
+        }
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            createStars();
+            setTimeout(() => {
+                typeWriter('J. Michael Burgess', 'typing-name', 80);
+            }, 2000);
+        });
+
+        // Add scroll reveal
+        const sections = document.querySelectorAll('.section');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        sections.forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(50px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
