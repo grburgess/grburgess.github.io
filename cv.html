@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Curriculum Vitae — J. Michael Burgess</title>
+<meta name="description" content="Curriculum Vitae of J. Michael Burgess — astrophysicist and machine learning engineer.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#050507;
+  --fg:#ECECF2;
+  --fg-dim:#B7B7C6;
+  --fg-muted:#83839A;
+  --gold:#E8C07A;
+  --gold-bright:#F6D597;
+  --cyan:#74D8E6;
+  --border:rgba(255,255,255,.09);
+  --maxw:820px;
+}
+@media print{
+  :root{
+    --bg:#fff; --fg:#1a1a1a; --fg-dim:#4a4a4a; --fg-muted:#6a6a6a;
+    --gold:#8a6a2a; --cyan:#2a7a8a; --border:#ddd;
+  }
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Space Grotesk',-apple-system,system-ui,sans-serif;
+  background:var(--bg); color:var(--fg); line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+@media print{body{background:#fff;color:#1a1a1a}}
+a{color:inherit;text-decoration:none;border-bottom:1px solid var(--border);transition:.25s}
+a:hover{border-bottom-color:var(--gold);color:var(--gold)}
+@media print{a{color:#1a4aa8;border-bottom:none;text-decoration:underline}}
+
+.cv-wrap{max-width:var(--maxw);margin:0 auto;padding:60px 28px 80px}
+@media print{.cv-wrap{padding:0;max-width:100%}}
+
+/* Header */
+.cv-head{text-align:center;margin-bottom:64px;padding-bottom:40px;border-bottom:1px solid var(--border)}
+.cv-head h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.01em;line-height:1.1}
+.cv-head .role{font-family:'Fraunces',serif;font-weight:400;font-size:1.3rem;color:var(--gold);margin-top:12px}
+.cv-head .meta{color:var(--fg-dim);margin-top:16px;font-size:.95rem}
+.cv-head .meta span{margin:0 10px;opacity:.4}
+.cv-head .links{display:flex;justify-content:center;gap:24px;margin-top:22px;font-size:.9rem}
+.cv-head .links a{border:none;color:var(--fg-dim);display:flex;align-items:center;gap:8px}
+.cv-head .links a:hover{color:var(--cyan)}
+.cv-head .links .ico{font-family:'JetBrains Mono',monospace;font-size:1.1rem}
+@media print{.cv-head .links{display:none}}
+.cv-head .dl-hint{font-family:'JetBrains Mono',monospace;font-size:.78rem;letter-spacing:.08em;color:var(--fg-muted);margin-top:26px}
+@media print{.cv-head .dl-hint{display:none}}
+
+/* Section */
+.cv-sec{margin-bottom:56px}
+.cv-sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:24px}
+.cv-sec-head h2{font-family:'Fraunces',serif;font-weight:400;font-size:1.6rem;color:var(--gold)}
+.cv-sec-head .num{font-family:'JetBrains Mono',monospace;font-size:.78rem;letter-spacing:.14em;color:var(--fg-muted)}
+@media print{.cv-sec-head h2{color:#1a1a1a}}
+
+/* Entry */
+.cv-entry{margin-bottom:28px}
+.cv-entry-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.cv-entry-head h3{font-family:'Fraunces',serif;font-weight:500;font-size:1.15rem}
+.cv-entry .when{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--gold)}
+.cv-entry .where{color:var(--fg-dim);font-size:.98rem;margin-top:4px}
+.cv-entry .desc{color:var(--fg-muted);font-size:.96rem;margin-top:10px;max-width:640px}
+.cv-entry ul{list-style:none;margin-top:10px;display:grid;gap:4px}
+.cv-entry li{padding-left:18px;position:relative;font-size:.95rem;color:var(--fg-muted)}
+.cv-entry li::before{content:'›';position:absolute;left:0;color:var(--gold)}
+@media print{.cv-entry li::before{color:#8a6a2a}}
+
+/* Grid for projects */
+.cv-projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px}
+.cv-project{font-size:.9rem;color:var(--fg-dim)}
+.cv-project strong{color:var(--fg);font-weight:500}
+.cv-project .bad{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--cyan);margin-left:8px}
+@media print{.cv-projects{grid-template-columns:1fr}}
+
+/* Publications */
+.cv-pub{margin-bottom:18px;padding-bottom:18px;border-bottom:1px solid var(--border);display:grid;gap:6px}
+.cv-pub:last-child{border-bottom:none}
+.cv-pub .title{font-family:'Fraunces',serif;font-weight:500;font-size:1rem;color:var(--fg)}
+.cv-pub .ven{font-family:'JetBrains Mono',monospace;font-size:.74rem;color:var(--gold);letter-spacing:.06em}
+.cv-pub .auth{font-style:italic;color:var(--fg-muted);font-size:.88rem}
+.cv-pub .ar{font-size:.82rem}
+.cv-pub .ar a{color:var(--cyan)}
+@media print{
+  .cv-pub{border-bottom-color:#ddd}
+  .cv-pub .title{color:#1a1a1a}
+  .cv-pub .ven{color:#8a6a2a}
+  .cv-pub .ar a{color:#2a7a8a}
+}
+
+/* Honors */
+.cv-honor{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid var(--border)}
+.cv-honor:first-child{border-top:none}
+.cv-honor .n{color:var(--fg)}
+.cv-honor .y{font-family:'JetBrains Mono',monospace;font-size:.82rem;color:var(--gold)}
+@media print{.cv-honor{border-top-color:#ddd}}
+
+/* Skills */
+.cv-skills{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cv-skill-group h4{font-family:'Fraunces',serif;font-weight:400;font-size:1.05rem;color:var(--fg-dim);margin-bottom:10px}
+.cv-skill-group ul{list-style:none;display:grid;gap:6px}
+.cv-skill-group li{font-size:.9rem;color:var(--fg-muted)}
+@media print{.cv-skills{grid-template-columns:1fr}}
+
+/* Print button */
+.btn-print{
+  position:fixed;bottom:28px;right:28px;
+  font-family:'JetBrains Mono',monospace;font-size:.8rem;
+  padding:12px 20px;border:1px solid var(--border);border-radius:100px;
+  background:rgba(5,5,7,.85);backdrop-filter:blur(8px);
+  color:var(--fg-dim);transition:.3s;cursor:pointer;display:flex;align-items:center;gap:10px;
+}
+.btn-print:hover{border-color:var(--gold);color:var(--fg)}
+@media print{.btn-print{display:none}}
+
+@media(max-width:680px){
+  .cv-wrap{padding:40px 20px}
+  .cv-projects{grid-template-columns:1fr}
+  .cv-skills{grid-template-columns:1fr;gap:20px}
+  .cv-entry-head{flex-direction:column;gap:4px}
+}
+</style>
+</head>
+<body>
+
+<div class="cv-wrap">
+  <header class="cv-head">
+    <h1>J. Michael Burgess</h1>
+    <div class="role">Astrophysicist · Machine Learning Engineer</div>
+    <div class="meta">
+      Munich, Germany<span>·</span>+49 173 604 6869<span>·</span>jburgess@mpe.mpg.de
+    </div>
+    <div class="links">
+      <a href="https://github.com/grburgess"><span class="ico">⌥</span> github.com/grburgess</a>
+      <a href="https://twitter.com/morethanpriors"><span class="ico">✦</span> @morethanpriors</a>
+      <a href="https://grburgess.github.io"><span class="ico">◈</span> grburgess.github.io</a>
+    </div>
+    <div class="dl-hint">Press <em>Cmd+P</em> or <em>Ctrl+P</em> to save as PDF</div>
+  </header>
+
+  <section class="cv-sec">
+    <div class="cv-sec-head">
+      <h2>Experience</h2>
+      <span class="num">01</span>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3>Assistant Director — Machine Learning Engineer</h3>
+        <span class="when">Now</span>
+      </div>
+      <div class="where">Moody's · Cape Analytics</div>
+      <div class="desc">Building ML infrastructure for property intelligence using geospatial computer vision and satellite imagery analysis. Extracting property characteristics for insurance, real estate, and risk assessment.</div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3>Senior AI Research Scientist</h3>
+        <span class="when">Oct 2023 — Apr 2025</span>
+      </div>
+      <div class="where">hema.to — AI Cytometry · Munich, Germany</div>
+      <div class="desc">Developed AI cytometry solutions for automated cell population classification and clinical flow cytometry analysis. Built ML-powered workflows for reproducible, secure, and fast cytometry analysis with privacy-first, GDPR-validated solutions.</div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3>Humboldt Research Fellow</h3>
+        <span class="when">2017 — Oct 2023</span>
+      </div>
+      <div class="where">Max-Planck-Institut für extraterrestrische Physik (MPE) · Garching, Germany</div>
+      <div class="desc">Member of Dr. Jochen Greiner's research group studying GRB emission physics via data from optical to high-energy gamma-ray instruments. Coordinated group projects, educated students in analysis and software design. Implemented automated burst alert and localization system including coded mask imaging.</div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3>Oskar Klein Research Fellow</h3>
+        <span class="when">2014 — 2017</span>
+      </div>
+      <div class="where">KTH Royal Institute of Technology · Stockholm, Sweden</div>
+      <div class="desc">Investigated GRB physics, developed Bayesian analysis tools for Fermi data, and explored spectral evolution. Designed novel scheme to fit Type Ia SNe cosmology data. Assisted graduate students in thesis studies.</div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3>Ph.D. in Physics · Fermi GBM Team</h3>
+        <span class="when">2009 — 2013</span>
+      </div>
+      <div class="where">University of Alabama in Huntsville</div>
+      <div class="desc"><em>Dissertation:</em> Discerning Physical Properties of Gamma-Ray Bursts via Time-Resolved Analysis with Physical Spectral Models. Also worked with Fermi GBM Team on daily satellite operations, data monitoring, and GRB trigger distribution. Developed multinational collaborations on various research projects.</div>
+    </div>
+  </section>
+
+  <section class="cv-sec">
+    <div class="cv-sec-head">
+      <h2>Education</h2>
+      <span class="num">02</span>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3>Ph.D. in Physics</h3>
+        <span class="when">2011 — 2013</span>
+      </div>
+      <div class="where">University of Alabama in Huntsville</div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3>M.S. in Physics</h3>
+        <span class="when">2009 — 2011</span>
+      </div>
+      <div class="where">University of Alabama in Huntsville</div>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3>B.S. in Physics</h3>
+        <span class="when">2005 — 2009</span>
+      </div>
+      <div class="where">University of Alabama in Huntsville</div>
+    </div>
+  </section>
+
+  <section class="cv-sec">
+    <div class="cv-sec-head">
+      <h2>Open Source Projects</h2>
+      <span class="num">03</span>
+    </div>
+
+    <div class="cv-projects">
+      <div class="cv-project"><strong>3ML</strong> — Multi-Mission Maximum Likelihood framework (lead developer)</div>
+      <div class="cv-project"><strong>popsynth</strong> <span class="bad">14★</span> — Population synthesis framework</div>
+      <div class="cv-project"><strong>pynchrotron</strong> <span class="bad">15★</span> — Synchrotron from cooling electrons</div>
+      <div class="cv-project"><strong>cosmogrb</strong> <span class="bad">12★</span> — Cosmological GRB simulator</div>
+      <div class="cv-project"><strong>pychangcooper</strong> <span class="bad">10★</span> — Fokker-Planck solver</div>
+      <div class="cv-project"><strong>gbm_drm_gen</strong> <span class="bad">8★</span> — Fermi GBM response generator</div>
+      <div class="cv-project"><strong>gbmgeometry</strong> <span class="bad">9★</span> — GBM geometry &amp; plotting</div>
+      <div class="cv-project"><strong>morgoth</strong> <span class="bad">5★</span> — Automated burst localization</div>
+      <div class="cv-project"><strong>nazgul</strong> <span class="bad">9★</span> — GRB triangulation (Stan + RFFs)</div>
+      <div class="cv-project"><strong>pyipn</strong> <span class="bad">7★</span> — IPN time-delay simulations</div>
+      <div class="cv-project"><strong>stan_utility</strong> <span class="bad">4★</span> — PyStan helpers</div>
+      <div class="cv-project"><strong>lholipop</strong> — Blazar population synthesis</div>
+    </div>
+    <p style="margin-top:18px;font-size:.9rem;color:var(--fg-dim)">150+ repositories at <a href="https://github.com/grburgess">github.com/grburgess</a></p>
+  </section>
+
+  <section class="cv-sec">
+    <div class="cv-sec-head">
+      <h2>Selected Publications</h2>
+      <span class="num">04</span>
+    </div>
+
+    <div class="cv-pub">
+      <div class="title">BALROG: Bayesian Location Reconstruction of GRBs</div>
+      <div class="ven">★ The Astrophysical Journal · 2017</div>
+      <div class="auth">Burgess, J. M., et al.</div>
+      <div class="ar"><a href="https://arxiv.org/abs/1610.07385">arXiv:1610.07385</a></div>
+    </div>
+
+    <div class="cv-pub">
+      <div class="title">Time-resolved GRB Polarization with POLAR and GBM</div>
+      <div class="ven">★ Astronomy &amp; Astrophysics · 2019</div>
+      <div class="auth">Burgess, J. M., Kole, M., et al.</div>
+      <div class="ar"><a href="https://arxiv.org/abs/1905.04830">arXiv:1905.04830</a></div>
+    </div>
+
+    <div class="cv-pub">
+      <div class="title">The Peculiar Physics of GRB 170817A</div>
+      <div class="ven">★ The Astrophysical Journal Letters · 2017</div>
+      <div class="auth">Bégué, D., Burgess, J. M., Greiner, J.</div>
+      <div class="ar"><a href="https://arxiv.org/abs/1710.07987">arXiv:1710.07987</a></div>
+    </div>
+
+    <div class="cv-pub">
+      <div class="title">Is Spectral Width a Better Discriminator of GRB Physics?</div>
+      <div class="ven">The Astrophysical Journal · 2017</div>
+      <div class="auth">Burgess, J. M.</div>
+      <div class="ar"><a href="https://arxiv.org/abs/1705.05718">arXiv:1705.05718</a></div>
+    </div>
+
+    <div class="cv-pub">
+      <div class="title">3ML: The Multi-Mission Maximum Likelihood Framework</div>
+      <div class="ven">The Astrophysical Journal Supplement · 2015</div>
+      <div class="auth">Vianello, G., Burgess, J. M., et al.</div>
+      <div class="ar"><a href="https://arxiv.org/abs/1507.08343">arXiv:1507.08343</a></div>
+    </div>
+
+    <p style="margin-top:20px;font-size:.9rem;color:var(--fg-dim)">50+ publications. Full list in <a href="/assets/cv.pdf">PDF version</a>.</p>
+  </section>
+
+  <section class="cv-sec">
+    <div class="cv-sec-head">
+      <h2>Honors &amp; Awards</h2>
+      <span class="num">05</span>
+    </div>
+
+    <div class="cv-honor">
+      <span class="n">Alexander von Humboldt Fellowship</span>
+      <span class="y">2017</span>
+    </div>
+    <div class="cv-honor">
+      <span class="n">Royal Swedish Academy of Sciences Research Scholarship</span>
+      <span class="y">2015</span>
+    </div>
+    <div class="cv-honor">
+      <span class="n">Oskar Klein Postdoctoral Fellowship</span>
+      <span class="y">2014</span>
+    </div>
+    <div class="cv-honor">
+      <span class="n">AAS Chamblis Award</span>
+      <span class="y">2012</span>
+    </div>
+  </section>
+
+  <section class="cv-sec">
+    <div class="cv-sec-head">
+      <h2>Skills &amp; Expertise</h2>
+      <span class="num">06</span>
+    </div>
+
+    <div class="cv-skills">
+      <div class="cv-skill-group">
+        <h4>Machine Learning</h4>
+        <ul>
+          <li>Geospatial computer vision</li>
+          <li>Bayesian inference</li>
+          <li>Deep learning (TensorFlow)</li>
+          <li>Uncertainty quantification</li>
+        </ul>
+      </div>
+      <div class="cv-skill-group">
+        <h4>Programming</h4>
+        <ul>
+          <li>Python (expert)</li>
+          <li>Stan / PyStan</li>
+          <li>C++ / CUDA</li>
+          <li>Javascript / D3.js</li>
+        </ul>
+      </div>
+      <div class="cv-skill-group">
+        <h4>Domains</h4>
+        <ul>
+          <li>High-energy astrophysics</li>
+          <li>Statistical modeling</li>
+          <li>Data assimilation</li>
+          <li>MCMC sampling</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-sec" style="margin-bottom:0">
+    <div class="cv-sec-head">
+      <h2>Talks &amp; Presentations</h2>
+      <span class="num">07</span>
+    </div>
+
+    <div class="cv-entry">
+      <div class="cv-entry-head">
+        <h3>Recent Invited Talks</h3>
+      </div>
+      <ul>
+        <li>Spectroscopy of GRBs — Rome, 2021</li>
+        <li>3ML Framework — Berkeley, 2021</li>
+        <li>Synchrotron Emission — Nanjing, 2019</li>
+        <li>Nazgul GRB Triangulation — Sardinia, 2021</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer style="margin-top:72px;padding-top:24px;border-top:1px solid var(--border);text-align:center;font-size:.85rem;color:var(--fg-muted)">
+    <p>© <span id="yr"></span> J. Michael Burgess — <a href="https://grburgess.github.io">grburgess.github.io</a></p>
+    <p style="margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:.78rem">Download as PDF: <a href="/assets/cv.pdf">cv.pdf</a> — or print this page (Cmd+P / Ctrl+P)</p>
+  </footer>
+</div>
+
+<button class="btn-print" onclick="window.print()" aria-label="Print CV">
+  <span>▤</span> Print / PDF
+</button>
+
+<script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
