@@ -40,7 +40,13 @@ a:hover{border-bottom-color:var(--gold);color:var(--gold)}
 @media print{a{color:#1a4aa8;border-bottom:none;text-decoration:underline}}
 
 .cv-wrap{max-width:var(--maxw);margin:0 auto;padding:60px 28px 80px}
-@media print{.cv-wrap{padding:0;max-width:100%}}
+@media print{
+  @page{margin:14mm 12mm}
+  .cv-wrap{padding:0;max-width:100%}
+  .cv-entry,.cv-pub,.cv-honor,.cv-skill-group{break-inside:avoid}
+  .cv-sec-head{break-after:avoid}
+  .cv-sec{margin-bottom:34px}
+}
 
 /* Header */
 .cv-head{text-align:center;margin-bottom:64px;padding-bottom:40px;border-bottom:1px solid var(--border)}
@@ -148,234 +154,570 @@ a:hover{border-bottom-color:var(--gold);color:var(--gold)}
   </header>
 
   <section class="cv-sec">
-    <div class="cv-sec-head">
-      <h2>Experience</h2>
-      <span class="num">01</span>
-    </div>
-
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3>Assistant Director — Machine Learning Engineer</h3>
-        <span class="when">Now</span>
-      </div>
-      <div class="where">Moody's · Cape Analytics</div>
-      <div class="desc">Building ML infrastructure for property intelligence using geospatial computer vision and satellite imagery analysis. Extracting property characteristics for insurance, real estate, and risk assessment.</div>
-    </div>
-
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3>Senior AI Research Scientist</h3>
-        <span class="when">Oct 2023 — Apr 2025</span>
-      </div>
-      <div class="where">hema.to — AI Cytometry · Munich, Germany</div>
-      <div class="desc">Developed AI cytometry solutions for automated cell population classification and clinical flow cytometry analysis. Built ML-powered workflows for reproducible, secure, and fast cytometry analysis with privacy-first, GDPR-validated solutions.</div>
-    </div>
-
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3>Humboldt Research Fellow</h3>
-        <span class="when">2017 — Oct 2023</span>
-      </div>
-      <div class="where">Max-Planck-Institut für extraterrestrische Physik (MPE) · Garching, Germany</div>
-      <div class="desc">Member of Dr. Jochen Greiner's research group studying GRB emission physics via data from optical to high-energy gamma-ray instruments. Coordinated group projects, educated students in analysis and software design. Implemented automated burst alert and localization system including coded mask imaging.</div>
-    </div>
-
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3>Oskar Klein Research Fellow</h3>
-        <span class="when">2014 — 2017</span>
-      </div>
-      <div class="where">KTH Royal Institute of Technology · Stockholm, Sweden</div>
-      <div class="desc">Investigated GRB physics, developed Bayesian analysis tools for Fermi data, and explored spectral evolution. Designed novel scheme to fit Type Ia SNe cosmology data. Assisted graduate students in thesis studies.</div>
-    </div>
-
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3>Ph.D. in Physics · Fermi GBM Team</h3>
-        <span class="when">2009 — 2013</span>
-      </div>
-      <div class="where">University of Alabama in Huntsville</div>
-      <div class="desc"><em>Dissertation:</em> Discerning Physical Properties of Gamma-Ray Bursts via Time-Resolved Analysis with Physical Spectral Models. Also worked with Fermi GBM Team on daily satellite operations, data monitoring, and GRB trigger distribution. Developed multinational collaborations on various research projects.</div>
-    </div>
-  </section>
+  <div class="cv-sec-head"><h2>Experience</h2><span class="num">01</span></div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Assistant Director — Machine Learning Engineer</h3><span class="when">Present</span></div>
+    <div class="where">Moody's · Cape Analytics — Munich, Germany</div>
+    <div class="desc">Building ML infrastructure for property intelligence using geospatial computer vision and satellite-imagery analysis — extracting property characteristics for insurance, real estate, and risk assessment.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Senior AI Research Scientist</h3><span class="when">2023 — 2025</span></div>
+    <div class="where">hema.to (AI Cytometry) · Munich, Germany</div>
+    <div class="desc">Developed AI cytometry for automated cell-population classification and clinical flow-cytometry analysis; built privacy-first, GDPR-validated, reproducible ML workflows.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Humboldt Research Fellow</h3><span class="when">2017 — 2023</span></div>
+    <div class="where">Max-Planck-Institut für extraterrestrische Physik · Garching, Germany</div>
+    <div class="desc">Member of Dr. Jochen Greiner's group studying GRB emission physics across optical to high-energy gamma-ray instruments. Helped coordinate the group in project design and student training, implemented an automated burst-alert and localization system, and conceived a new coded-mask imaging method (supervising its PhD implementation) that substantially increased the sensitivity of INTEGRAL/SPI.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Oskar Klein Research Fellow</h3><span class="when">2014 — 2017</span></div>
+    <div class="where">KTH Royal Institute of Technology · Stockholm, Sweden</div>
+    <div class="desc">In Felix Ryde's GRB group: developed physical models for GRB spectra and Bayesian software to fit Fermi data, investigated spectral evolution and the validity of classic spectral correlations, and designed a novel scheme to fit Type Ia SNe cosmology data.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Fermi GBM Team</h3><span class="when">2009 — 2013</span></div>
+    <div class="where">University of Alabama in Huntsville · Huntsville, AL, USA</div>
+    <div class="desc">Developed the ability to fit physical spectral models to GRB data. Participated in daily satellite operations, data monitoring, and the GCN collaboration distributing GRB trigger information; built many international research collaborations.</div>
+  </div>
+</section>
 
   <section class="cv-sec">
-    <div class="cv-sec-head">
-      <h2>Education</h2>
-      <span class="num">02</span>
-    </div>
-
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3>Ph.D. in Physics</h3>
-        <span class="when">2011 — 2013</span>
-      </div>
-      <div class="where">University of Alabama in Huntsville</div>
-    </div>
-
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3>M.S. in Physics</h3>
-        <span class="when">2009 — 2011</span>
-      </div>
-      <div class="where">University of Alabama in Huntsville</div>
-    </div>
-
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3>B.S. in Physics</h3>
-        <span class="when">2005 — 2009</span>
-      </div>
-      <div class="where">University of Alabama in Huntsville</div>
-    </div>
-  </section>
+  <div class="cv-sec-head"><h2>Education</h2><span class="num">02</span></div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Ph.D. in Physics</h3><span class="when">2011 – 2013</span></div>
+    <div class="where">University of Alabama in Huntsville, USA</div>
+    <div class="desc">Dissertation: Discerning the Physical Properties of Gamma-Ray Bursts via Time-Resolved Analysis with Physical Spectral Models. Advisor: Dr. Robert D. Preece.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Master in Physics</h3><span class="when">2008 – 2011</span></div>
+    <div class="where">University of Alabama in Huntsville, USA</div>
+    <div class="desc">Advisor: Dr. Robert D. Preece.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Bachelor of Science</h3><span class="when">2003 – 2008</span></div>
+    <div class="where">University of Alabama in Huntsville, USA</div>
+    <div class="desc">Dual degree in Math and Physics.</div>
+  </div>
+</section>
 
   <section class="cv-sec">
-    <div class="cv-sec-head">
-      <h2>Open Source Projects</h2>
-      <span class="num">03</span>
-    </div>
-
-    <div class="cv-projects">
-      <div class="cv-project"><strong>3ML</strong> — Multi-Mission Maximum Likelihood framework (lead developer)</div>
-      <div class="cv-project"><strong>popsynth</strong> <span class="bad">14★</span> — Population synthesis framework</div>
-      <div class="cv-project"><strong>pynchrotron</strong> <span class="bad">15★</span> — Synchrotron from cooling electrons</div>
-      <div class="cv-project"><strong>cosmogrb</strong> <span class="bad">12★</span> — Cosmological GRB simulator</div>
-      <div class="cv-project"><strong>pychangcooper</strong> <span class="bad">10★</span> — Fokker-Planck solver</div>
-      <div class="cv-project"><strong>gbm_drm_gen</strong> <span class="bad">8★</span> — Fermi GBM response generator</div>
-      <div class="cv-project"><strong>gbmgeometry</strong> <span class="bad">9★</span> — GBM geometry &amp; plotting</div>
-      <div class="cv-project"><strong>morgoth</strong> <span class="bad">5★</span> — Automated burst localization</div>
-      <div class="cv-project"><strong>nazgul</strong> <span class="bad">9★</span> — GRB triangulation (Stan + RFFs)</div>
-      <div class="cv-project"><strong>pyipn</strong> <span class="bad">7★</span> — IPN time-delay simulations</div>
-      <div class="cv-project"><strong>stan_utility</strong> <span class="bad">4★</span> — PyStan helpers</div>
-      <div class="cv-project"><strong>lholipop</strong> — Blazar population synthesis</div>
-    </div>
-    <p style="margin-top:18px;font-size:.9rem;color:var(--fg-dim)">150+ repositories at <a href="https://github.com/grburgess">github.com/grburgess</a></p>
-  </section>
-
-  <section class="cv-sec">
-    <div class="cv-sec-head">
-      <h2>Selected Publications</h2>
-      <span class="num">04</span>
-    </div>
-
-    <div class="cv-pub">
-      <div class="title">BALROG: Bayesian Location Reconstruction of GRBs</div>
-      <div class="ven">★ The Astrophysical Journal · 2017</div>
-      <div class="auth">Burgess, J. M., et al.</div>
-      <div class="ar"><a href="https://arxiv.org/abs/1610.07385">arXiv:1610.07385</a></div>
-    </div>
-
-    <div class="cv-pub">
-      <div class="title">Time-resolved GRB Polarization with POLAR and GBM</div>
-      <div class="ven">★ Astronomy &amp; Astrophysics · 2019</div>
-      <div class="auth">Burgess, J. M., Kole, M., et al.</div>
-      <div class="ar"><a href="https://arxiv.org/abs/1905.04830">arXiv:1905.04830</a></div>
-    </div>
-
-    <div class="cv-pub">
-      <div class="title">The Peculiar Physics of GRB 170817A</div>
-      <div class="ven">★ The Astrophysical Journal Letters · 2017</div>
-      <div class="auth">Bégué, D., Burgess, J. M., Greiner, J.</div>
-      <div class="ar"><a href="https://arxiv.org/abs/1710.07987">arXiv:1710.07987</a></div>
-    </div>
-
-    <div class="cv-pub">
-      <div class="title">Is Spectral Width a Better Discriminator of GRB Physics?</div>
-      <div class="ven">The Astrophysical Journal · 2017</div>
-      <div class="auth">Burgess, J. M.</div>
-      <div class="ar"><a href="https://arxiv.org/abs/1705.05718">arXiv:1705.05718</a></div>
-    </div>
-
-    <div class="cv-pub">
-      <div class="title">3ML: The Multi-Mission Maximum Likelihood Framework</div>
-      <div class="ven">The Astrophysical Journal Supplement · 2015</div>
-      <div class="auth">Vianello, G., Burgess, J. M., et al.</div>
-      <div class="ar"><a href="https://arxiv.org/abs/1507.08343">arXiv:1507.08343</a></div>
-    </div>
-
-    <p style="margin-top:20px;font-size:.9rem;color:var(--fg-dim)">50+ publications. Full list in <a href="/assets/cv.pdf">PDF version</a>.</p>
-  </section>
+  <div class="cv-sec-head"><h2>Selected Publications</h2><span class="num">03</span></div>
+  <div class="cv-pub">
+    <div class="title">BALROG: Bayesian Location Reconstruction of GRBs</div>
+    <div class="ven">The Astrophysical Journal · 2017</div>
+    <div class="auth">Burgess, J. M., et al.</div>
+    <div class="ar"><a href="https://arxiv.org/abs/1610.07385">arXiv:1610.07385</a></div>
+  </div>
+  <div class="cv-pub">
+    <div class="title">Time-resolved GRB Polarization with POLAR and GBM</div>
+    <div class="ven">Astronomy & Astrophysics · 2019</div>
+    <div class="auth">Burgess, J. M., Kole, M., et al.</div>
+    <div class="ar"><a href="https://arxiv.org/abs/1905.04830">arXiv:1905.04830</a></div>
+  </div>
+  <div class="cv-pub">
+    <div class="title">The Peculiar Physics of GRB 170817A</div>
+    <div class="ven">The Astrophysical Journal Letters · 2017</div>
+    <div class="auth">Bégué, D., Burgess, J. M., Greiner, J.</div>
+    <div class="ar"><a href="https://arxiv.org/abs/1710.07987">arXiv:1710.07987</a></div>
+  </div>
+  <div class="cv-pub">
+    <div class="title">Is Spectral Width a Better Discriminator of GRB Physics?</div>
+    <div class="ven">The Astrophysical Journal · 2017</div>
+    <div class="auth">Burgess, J. M.</div>
+    <div class="ar"><a href="https://arxiv.org/abs/1705.05718">arXiv:1705.05718</a></div>
+  </div>
+  <div class="cv-pub">
+    <div class="title">3ML: The Multi-Mission Maximum Likelihood Framework</div>
+    <div class="ven">The Astrophysical Journal Supplement · 2015</div>
+    <div class="auth">Vianello, G., Burgess, J. M., et al.</div>
+    <div class="ar"><a href="https://arxiv.org/abs/1507.08343">arXiv:1507.08343</a></div>
+  </div>
+  <div class="cv-pub">
+    <div class="title">Automatic Detection of Long-duration Transients in Fermi-GBM</div>
+    <div class="ven">Astronomy & Astrophysics · 2022</div>
+    <div class="auth">Kunzweiler, F., Biltzinger, B., Greiner, J., Burgess, J. M.</div>
+    <div class="ar"><a href="https://arxiv.org/abs/2205.13649">arXiv:2205.13649</a></div>
+  </div>
+  <div class="cv-entry"><div class="desc">50+ publications across high-energy astrophysics and astrostatistics. Full list in the <a href="/assets/cv.pdf">PDF version</a> and on <a href="https://scholar.google.com/citations?user=eZy9F9UAAAAJ">Google Scholar</a>.</div></div>
+</section>
 
   <section class="cv-sec">
-    <div class="cv-sec-head">
-      <h2>Honors &amp; Awards</h2>
-      <span class="num">05</span>
-    </div>
+  <div class="cv-sec-head"><h2>Open Source Software</h2><span class="num">04</span></div>
 
-    <div class="cv-honor">
-      <span class="n">Alexander von Humboldt Fellowship</span>
-      <span class="y">2017</span>
-    </div>
-    <div class="cv-honor">
-      <span class="n">Royal Swedish Academy of Sciences Research Scholarship</span>
-      <span class="y">2015</span>
-    </div>
-    <div class="cv-honor">
-      <span class="n">Oskar Klein Postdoctoral Fellowship</span>
-      <span class="y">2014</span>
-    </div>
-    <div class="cv-honor">
-      <span class="n">AAS Chamblis Award</span>
-      <span class="y">2012</span>
-    </div>
-  </section>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>3ML</h3><span class="when">Lead developer</span></div>
+    <div class="where"><a href="https://threeml.readthedocs.io">https://threeml.readthedocs.io</a></div>
+    <div class="desc">The Multi-Mission Maximum Likelihood framework (3ML) provides a common high-level interface and model definition, which allows for an easy, coherent and intuitive modeling of sources using all the available data, no matter their origin. At the same time, thanks to its architecture based on plug-ins, 3ML uses under the hood the official software of each instrument, the only one certified and maintained by the collaboration which built the instrument itself. This guarantees that 3ML is always using the best possible methodology to deal with the data of each instrument.</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>astromodels</h3><span class="when">Lead developer</span></div>
+    <div class="where"><a href="https://astromodels.readthedocs.io">https://astromodels.readthedocs.io</a></div>
+    <div class="desc">Astromodels is a very flexible framework to define models for likelihood or Bayesian analysis of astrophysical data.</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>popsynth</h3><span class="when">Sole developer</span></div>
+    <div class="where"><a href="https://popsynth.readthedocs.io">https://popsynth.readthedocs.io</a></div>
+    <div class="desc">popsynth is a generic population modeling framework designed to generate synthetic populations of astrophysical sources either for experimental design or calibration of statistical models.</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>pynchrotron</h3><span class="when">Sole developer</span></div>
+    <div class="where"><a href="https://github.com/grburgess/pynchrotron">https://github.com/grburgess/pynchrotron</a></div>
+    <div class="desc">pynchrotron is a numerical code that uses the Chang-Cooper method to solve the Fokker-Planck equation for the injection of electrons and their subsequent cooling via synchrotron emission. A 3ML model is provided to allow for spectral fitting to GRB/AGN data.</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>cosmogrb</h3><span class="when">Sole developer</span></div>
+    <div class="where"><a href="https://cosmogrb.readthedocs.io">https://cosmogrb.readthedocs.io</a></div>
+    <div class="desc">cosmogrb is a package built upon popsynth to simulate GRBs from luminosity functions and various other distributions. Each GRB can be passed through an instrument's response resulting in data that can be later analyzed (preferably with 3ML). Thus, one can generate catalogs of data from theoretical assumptions and test what these assumptions lead to in terms of observation.</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>gbmgeometry</h3><span class="when">Lead developer</span></div>
+    <div class="where"><a href="https://gbmgeometry.readthedocs.io">https://gbmgeometry.readthedocs.io</a></div>
+    <div class="desc">gbmgeometry provides spacecraft geometry tools for the Fermi-GBM satellite. 3D plotting and animation tools are provided to allow for understanding the incident angle of GRB emission.</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>morgoth</h3><span class="when">Lead developer</span></div>
+    <div class="where"><a href="https://github.com/grburgess/morgoth">https://github.com/grburgess/morgoth</a></div>
+    <div class="desc">morgoth is the MPE lead GBM localization, spectral analysis, and cataloging pipeline that provides real-time localizations of GRBs to the follow-up community.</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>gbmkitty</h3><span class="when">Sole developer</span></div>
+    <div class="where"><a href="https://github.com/grburgess/gbmkitty">https://github.com/grburgess/gbmkitty</a></div>
+    <div class="desc">An experimental pipeline package to automatically create spectral analysis catalogs for the Fermi-GBM data.</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>gbm_drm_gen</h3><span class="when">Lead developer</span></div>
+    <div class="where"><a href="https://gbm-drm-gen.readthedocs.io">https://gbm-drm-gen.readthedocs.io</a></div>
+    <div class="desc">The backbone of BALROG, a full rewrite of the original GBM response generator. BALROG must generate an instrument response for each proposed position on the sky.</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>pyipn</h3><span class="when">Lead developer</span></div>
+    <div class="where"><a href="https://github.com/grburgess/pyipn">https://github.com/grburgess/pyipn</a></div>
+    <div class="desc">PyIPN is a tool for simulating GRB light curves observed by gamma-ray detectors dispersed throughout the Universe (theoretically, but mostly in the Sol system).</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>nazgul</h3><span class="when">Lead developer</span></div>
+    <div class="where"><a href="https://github.com/grburgess/nazgul">https://github.com/grburgess/nazgul</a></div>
+    <div class="desc">A modern approach to triangulating GRBs via time-delay measurements of multiple instruments. The method utilizes random Fourier features and a full-Bayesian hierarchical model to properly locate GRBs with the appropriate statistical likelihood.</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>rball</h3><span class="when">Sole developer</span></div>
+    <div class="where"><a href="https://github.com/grburgess/rball">https://github.com/grburgess/rball</a></div>
+    <div class="desc">A generic response database generator and localization code for energy dispersed non-imaging detectors such as GBM or POLAR-2.</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>pychangcooper</h3><span class="when">Sole developer</span></div>
+    <div class="where"><a href="https://pychangcooper.readthedocs.io">https://pychangcooper.readthedocs.io</a></div>
+    <div class="desc">A simple Python solver for generic Fokker-Planck equations.</div>
+  </div>
+</section>
 
   <section class="cv-sec">
-    <div class="cv-sec-head">
-      <h2>Skills &amp; Expertise</h2>
-      <span class="num">06</span>
-    </div>
+  <div class="cv-sec-head"><h2>Honors & Awards</h2><span class="num">05</span></div>
+  <div class="cv-honor"><span class="n">Alexander von Humboldt Fellowship (ca 100,000 EUR)</span><span class="y">2017</span></div>
+  <div class="cv-honor"><span class="n">Royal Swedish Academy of Sciences Research Scholarship (ca 20,000 SEK)</span><span class="y">2015</span></div>
+  <div class="cv-honor"><span class="n">Oscar-Klein Postdoctoral Fellowship</span><span class="y">2014</span></div>
+  <div class="cv-honor"><span class="n">AAS Chambliss Award, American Astronomical Society Meeting</span><span class="y">2012</span></div>
+  <div class="cv-honor"><span class="n">Alabama Space Grant Consortium Graduate Fellowship (ca 40,000 USD/yr)</span><span class="y">2010</span></div>
+  <div class="cv-honor"><span class="n">Curry Astrophysics Graduate Fellowship (ca 9,000 USD/yr)</span><span class="y">2008</span></div>
+  <div class="cv-honor"><span class="n">Vanderbilt Prize for Undergraduate Research in Physics and Astronomy (ca 500 USD)</span><span class="y">2007</span></div>
+  <div class="cv-honor"><span class="n">Alabama Space Grant Consortium Undergraduate Fellowship (ca 9,000 USD/yr)</span><span class="y">2007</span></div>
+  <div class="cv-honor"><span class="n">NASA Institute of Advanced Concepts Research Fellowship (9,000 USD)</span><span class="y">2006</span></div>
+  <div class="cv-honor"><span class="n">University of Alabama in Huntsville Academic Excellence Scholarship</span><span class="y">2003</span></div>
+</section>
 
-    <div class="cv-skills">
-      <div class="cv-skill-group">
-        <h4>Machine Learning</h4>
-        <ul>
-          <li>Geospatial computer vision</li>
-          <li>Bayesian inference</li>
-          <li>Deep learning (TensorFlow)</li>
-          <li>Uncertainty quantification</li>
-        </ul>
-      </div>
-      <div class="cv-skill-group">
-        <h4>Programming</h4>
-        <ul>
-          <li>Python (expert)</li>
-          <li>Stan / PyStan</li>
-          <li>C++ / CUDA</li>
-          <li>Javascript / D3.js</li>
-        </ul>
-      </div>
-      <div class="cv-skill-group">
-        <h4>Domains</h4>
-        <ul>
-          <li>High-energy astrophysics</li>
-          <li>Statistical modeling</li>
-          <li>Data assimilation</li>
-          <li>MCMC sampling</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+  <section class="cv-sec">
+  <div class="cv-sec-head"><h2>Invited Talks & Presentations</h2><span class="num">06</span></div>
 
-  <section class="cv-sec" style="margin-bottom:0">
-    <div class="cv-sec-head">
-      <h2>Talks &amp; Presentations</h2>
-      <span class="num">07</span>
-    </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Nazgul: GRB position triangulation via non-stationary time-series models</h3><span class="when">October 2021</span></div>
+    <div class="where">INTEGRAL: towards the third decade of X and Gamma ray observations · Sardinia, Italy</div>
+  </div>
 
-    <div class="cv-entry">
-      <div class="cv-entry-head">
-        <h3>Recent Invited Talks</h3>
-      </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Intro to X-ray analysis with 3ML</h3><span class="when">August 2021</span></div>
+    <div class="where">Chandra Data Science · Virtual</div>
+    <div class="desc">Watch: <a href="https://www.youtube.com/watch?v=ewCDt3vzX2I">youtube.com/watch?v=ewCDt3vzX2I</a></div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>3ML: The Multi-Mission Maximum Likelihood Framework</h3><span class="when">August 2021</span></div>
+    <div class="where">Chandra Data Science · Virtual</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Spectroscopy of GRBs: Where are we now? (<strong>Invited</strong>)</h3><span class="when">July 2021</span></div>
+    <div class="where">Sixteenth Marcel Grossmann Meeting · Rome, Italy</div>
+    <div class="desc">Watch: <a href="https://youtu.be/n7vWAVhFXiU?t=2988">youtu.be/n7vWAVhFXiU?t=2988</a></div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>The Multi-Mission Maximum Likelihood Framework (<strong>Invited</strong>)</h3><span class="when">February 2021</span></div>
+    <div class="where">COSI team journal club · Berkeley, California</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Seminar on Hierarchical Bayesian Models (<strong>Invited</strong>)</h3><span class="when">January 2021</span></div>
+    <div class="where">TUM ORIGINS special seminar · Munich, Germany</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Synchrotron (<strong>Invited</strong>)</h3><span class="when">October 2019</span></div>
+    <div class="where">Gamma-ray Bursts in the Gravitational Wave Era 2019 · Yokohama, Japan</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Synchrotron (<strong>Invited</strong>)</h3><span class="when">September 2019</span></div>
+    <div class="where">Ioffe Workshop on GRBs and other transient sources: 25 Years of Konus-Wind Experiment (KW25) · St. Petersburg, Russia</div>
+    <div class="desc">Prompt Emission Session Chair</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Synchrotron (<strong>Invited</strong>)</h3><span class="when">March 2019</span></div>
+    <div class="where">Nanjing GRB Conference · Nanjing, China</div>
+    <div class="desc">Involved in prompt emission panel discussion</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>The Multi-Mission Maximum Likelihood Framework (<strong>Invited</strong>)</h3><span class="when">March 2019</span></div>
+    <div class="where">PyGamma · Heidelberg, Germany</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Synchrotron</h3><span class="when">January 2019</span></div>
+    <div class="where">XX Integral Conference · Geneva, Switzerland</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Polarization</h3><span class="when">December 2018</span></div>
+    <div class="where">POLAR Workshop · Geneva, Switzerland</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>GRB Spectral Width</h3><span class="when">January 2017</span></div>
+    <div class="where">Deciphering the Violent Universe · Cancún, Mexico</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Awakening the BALROG</h3><span class="when">October 2017</span></div>
+    <div class="where">Fermi Symposium · Garmisch, Germany</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>On the Fermi GBM event 0.4s GW-150914</h3><span class="when">2016</span></div>
+    <div class="where">GRB Symposium 2016 · Huntsville, AL, USA</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Exploring Gamma-ray Burst via the Bayesian Paradigm (<strong>Invited</strong>)</h3><span class="when">2016</span></div>
+    <div class="where">Imperial College London Statistics Seminar · London, United Kingdom</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>An External Shock Origin of GRB 141028A</h3><span class="when">2015</span></div>
+    <div class="where">TEXAS Symposium · Geneva, Switzerland</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Taking the Band Function Too Far</h3><span class="when">July 2015</span></div>
+    <div class="where">Fourteenth Marcel Grossmann Meeting · Rome, Italy</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>To Synchrotron or Not to Synchrotron</h3><span class="when">October 2014</span></div>
+    <div class="where">5th Fermi Symposium · Nagoya, Japan</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Relating the Thermal and Non-thermal Components of Fermi GRBs</h3><span class="when">2013</span></div>
+    <div class="where">GRB 2013 Symposium · Huntsville, AL, USA</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Exploring Fermi GRBs via Physical SEDs</h3><span class="when">November 2012</span></div>
+    <div class="where">GRB 2012 · Malaga, Spain</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Constraints of the Synchrotron Shock Model</h3><span class="when">November 2011</span></div>
+    <div class="where">3rd Fermi Symposium · Rome, Italy</div>
+  </div>
+
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Constraints of the Synchrotron Shock Model (<strong>Invited</strong>)</h3><span class="when">November 2010</span></div>
+    <div class="where">GRB 2010 · Annapolis, MD, USA</div>
+  </div>
+
+</section>
+
+  <section class="cv-sec">
+  <div class="cv-sec-head"><h2>Teaching</h2><span class="num">07</span></div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Spectral Fitting Methods Workshop</h3><span class="when">2019</span></div>
+    <div class="where">Lecturer and Co-Organizer · Max Planck Institute for Extraterrestrial Physics, Garching, Germany</div>
+    <ul><li><a href="https://www.mpe.mpg.de/resources/HE/Buchner/xrayworkshop/">Lecture (link)</a></li></ul>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>MPE Code Monkeys</h3><span class="when">2019</span></div>
+    <div class="where">Lecturer and Co-Organizer · Max Planck Institute for Extraterrestrial Physics, Garching, Germany</div>
+    <ul><li>Hosted a weekly meetup with MPE students to discuss computer software issues and give advice</li></ul>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>MCMC Workshop</h3><span class="when">2019</span></div>
+    <div class="where">Lecturer and Co-Organizer · Max Planck Institute for Extraterrestrial Physics, Garching, Germany</div>
+    <ul><li>Created a spontaneous meetup with MPE students to learn how to code an MCMC</li></ul>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Applied Multi-Messenger Astronomy 2 (Statistical and Machine Learning Methods in Particle and Astrophysics) (PH2282)</h3><span class="when">2019</span></div>
+    <div class="where">Assistant Lecturer · Technical University of Munich, Garching, Germany</div>
+    <ul>
+      <li><a href="https://github.com/mmatteo/TUM-lectures-PH2282/tree/master/bayes_lecture1">Lecture 1 (link)</a></li>
+      <li><a href="https://github.com/mmatteo/TUM-lectures-PH2282/tree/master/bayes_lecture2">Lecture 2 (link)</a></li>
+      <li><a href="https://github.com/mmatteo/TUM-lectures-PH2282/tree/master/bayes_lecture3">Lecture 3 (link)</a></li>
+    </ul>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>STEW: Studies of Transients and Extreme Winds</h3><span class="when">2018-2019</span></div>
+    <div class="where">Organizer · Max Planck Institute for Extraterrestrial Physics, Garching, Germany</div>
+    <ul><li>Weekly meetup with students and postdocs to discuss progress in our research groups and help students learn to present their work</li></ul>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Fermi Summer School</h3><span class="when">2015</span></div>
+    <div class="where">Invited Lecturer on GRB Analysis · University of Delaware, Lewes, Delaware</div>
+    <ul><li><strong>Invited</strong> to instruct graduate students on proper Fermi GRB analysis <a href="https://fermi.gsfc.nasa.gov/science/mtgs/summerschool/2015/">(link)</a></li></ul>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Astroparticle Physics (SH2204)</h3><span class="when">2016</span></div>
+    <div class="where">Assistant Lecturer · KTH Royal Institute of Technology, Stockholm, Sweden</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Astroparticle Physics (SH2204)</h3><span class="when">2014</span></div>
+    <div class="where">Assistant Lecturer · KTH Royal Institute of Technology, Stockholm, Sweden</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Astrophysics (SH2402)</h3><span class="when">2014</span></div>
+    <div class="where">Assistant Lecturer · KTH Royal Institute of Technology, Stockholm, Sweden</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Quantum Mechanics (Bachelor level)</h3><span class="when">2013</span></div>
+    <div class="where">Assistant Lecturer · University of Alabama in Huntsville, Huntsville, AL</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>General Relativity (Bachelor level)</h3><span class="when">2012</span></div>
+    <div class="where">Assistant Lecturer · University of Alabama in Huntsville, Huntsville, AL</div>
+  </div>
+</section>
+
+  <section class="cv-sec">
+  <div class="cv-sec-head"><h2>Student Supervision</h2><span class="num">08</span></div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Julius Moeller</h3><span class="when">2021-present</span></div>
+    <div class="where">Assistant Master Supervisor · MPE, Garching, Germany</div>
+    <div class="desc">Development of new imaging algorithms for INTEGRAL-SPI.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Elisa Schosser</h3><span class="when">2021-present</span></div>
+    <div class="where">Assistant Master Supervisor · MPE, Garching, Germany</div>
+    <div class="desc">Population synthesis of extra-galactic magnetars.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Florian Seitz</h3><span class="when">2021</span></div>
+    <div class="where">Assistant Bachelor Supervisor · MPE, Garching, Germany</div>
+    <div class="desc">Fitting of physical models in time and energy to GRB afterglow light curves.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Kivanc Gulderen</h3><span class="when">2021-present</span></div>
+    <div class="where">Assistant Bachelor Supervisor · MPE, Garching, Germany</div>
+    <div class="desc">Application of the Nazgul location algorithm to the entire set of IPN GRBs.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Eduard Dolhescu</h3><span class="when">2020-2021</span></div>
+    <div class="where">Assistant Bachelor Supervisor · MPE, Garching, Germany</div>
+    <ul><li>Further development of the Nazgul location software</li><li>Testing of Nazgul on real data</li></ul>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Markus Trost</h3><span class="when">2020-2021</span></div>
+    <div class="where">Assistant Master Supervisor · MPE, Garching, Germany</div>
+    <div class="desc">Developing population synthesis of GRB infrared afterglows.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Niklas von Minckwitz</h3><span class="when">2019-2020</span></div>
+    <div class="where">Assistant Bachelor Supervisor · MPE, Garching, Germany</div>
+    <div class="desc">Calibrating the effect of localization errors on GRB spectra.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Moritz Singhartinger</h3><span class="when">2019-2020</span></div>
+    <div class="where">Assistant Bachelor Supervisor · MPE, Garching, Germany</div>
+    <div class="desc">Development of new methods for GRB triangulation.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Bjoern Blitzinger</h3><span class="when">2018-present</span></div>
+    <div class="where">Assistant Master and Ph.D. Supervisor · MPE, Garching, Germany</div>
+    <ul><li>Modeling of the Fermi-GBM background with a focus on fitting the Earth's albedo flux and the cosmic γ-ray background spectra</li><li>Developing a new analysis for INTEGRAL SPI data</li></ul>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Francesco Berlato</h3><span class="when">2017-2020</span></div>
+    <div class="where">Assistant Ph.D. Supervisor · MPE, Garching, Germany</div>
+    <ul><li>Using BALROG to locate GRBs with Fermi-GBM and understanding the inherent systematics of the instrument</li><li>Fitting physical photospheric models to GRB spectra</li></ul>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Simon Steinmaßl</h3><span class="when">2018-2019</span></div>
+    <div class="where">Assistant Master Supervisor · MPE, Garching, Germany</div>
+    <div class="desc">Bayesian modeling of x-ray binary data obtained by GROND.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Marco Grau</h3><span class="when">2019</span></div>
+    <div class="where">Assistant Bachelor Supervisor · MPE, Garching, Germany</div>
+    <div class="desc">Fitting physical afterglow models to multiwavelength data.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Ana Bacelj</h3><span class="when">2017</span></div>
+    <div class="where">Assistant Master Supervisor · MPE, Garching, Germany</div>
+    <div class="desc">Fitting hierarchical Bayesian correlation models to Fermi-GBM data.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Felix Kunzweiler</h3><span class="when">2018-2020</span></div>
+    <div class="where">Assistant Bachelor and Master Supervisor · MPE, Garching, Germany</div>
+    <ul><li>Construction of an object-oriented framework for fitting and modeling the Fermi-GBM background</li><li>Development of a pipeline and website for Fermi-GRB localizations and alerts</li><li>Development of a transient search pipeline in GRB data</li></ul>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Liang Li</h3><span class="when">2014-2016</span></div>
+    <div class="where">Assistant Ph.D. Supervisor · KTH Royal Institute of Technology, Stockholm, Sweden</div>
+    <div class="desc">Spectral analysis and correlations in GRB spectra.</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Shabnam Iyyani</h3><span class="when">2014</span></div>
+    <div class="where">Assistant Ph.D. Supervisor · KTH Royal Institute of Technology, Stockholm, Sweden</div>
+    <div class="desc">Synchrotron and photospheric modeling of Fermi-GBM observed GRBs.</div>
+  </div>
+</section>
+
+  <section class="cv-sec">
+  <div class="cv-sec-head"><h2>Professional Service</h2><span class="num">09</span></div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Project Scientist</h3><span class="when">2018 – Present</span></div>
+    <div class="where">POLAR-2</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Board Member</h3><span class="when">2018 – 2021</span></div>
+    <div class="where">International Association of Astrostatistics</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Member</h3><span class="when">2021 – Present</span></div>
+    <div class="where">High Energy Astrophysics Codes, Interfaces and Tools</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Member</h3><span class="when">2017 – Present</span></div>
+    <div class="where">Cosmostatistics Initiative (COIN)</div>
+  </div>
+</section>
+
+  <section class="cv-sec">
+  <div class="cv-sec-head"><h2>Press & Outreach</h2><span class="num">10</span></div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>What powers the most powerful explosions in the Universe? <a href="https://www.mpe.mpg.de/7358849/news20191021">(link)</a></h3><span class="when">2019</span></div>
+    <div class="where">MPE Press Release</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Saving Synchrotron in Gamma-ray Bursts <a href="https://astronomycommunity.nature.com/users/313419-j-michael-burgess/posts/54365-saving-synchrotron-in-gamma-ray-bursts">(link)</a></h3><span class="when">2019</span></div>
+    <div class="where">Nature Astronomy Outreach Article</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>What powers the most powerful explosions in the Universe? <a href="https://scitechdaily.com/what-powers-the-most-energetic-explosions-in-the-universe/">(link)</a></h3><span class="when">2019</span></div>
+    <div class="where">SciTechDaily Interview</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>What powers the most powerful explosions in the Universe? <a href="https://www.astronews.com/news/artikel/2019/11/1911-005.shtml">(link)</a></h3><span class="when">2019</span></div>
+    <div class="where">AstroNews Interview (German)</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>What powers the most powerful explosions in the Universe? <a href="https://www.astronews.com/news/artikel/2019/11/1911-005.shtml">(link)</a></h3><span class="when">2019</span></div>
+    <div class="where">SciGlow Interview</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Interview with Michael Burgess <a href="https://ssl.fysik.su.se/okc/internal/blog/interview-with-michael-burgess/">(link)</a></h3><span class="when">2014</span></div>
+    <div class="where">Oskar Klein Centre Interview</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Don't worry about getting fried by gamma ray burst <a href="https://www.uah.edu/news/research/don-t-worry-about-getting-fried-by-gamma-ray-burst-uah-researchers-say">(link)</a></h3><span class="when">2013</span></div>
+    <div class="where">UAH Interview</div>
+  </div>
+  <div class="cv-entry">
+    <div class="cv-entry-head"><h3>Don't worry about getting fried by gamma ray burst <a href="https://phys.org/news/2013-12-dont-fried-gamma-ray.html">(link)</a></h3><span class="when">2013</span></div>
+    <div class="where">Phys.org Interview</div>
+  </div>
+</section>
+
+  <section class="cv-sec">
+  <div class="cv-sec-head"><h2>Skills</h2><span class="num">11</span></div>
+  <div class="cv-skills">
+    <div class="cv-skill-group">
+      <h4>Programming Languages</h4>
       <ul>
-        <li>Spectroscopy of GRBs — Rome, 2021</li>
-        <li>3ML Framework — Berkeley, 2021</li>
-        <li>Synchrotron Emission — Nanjing, 2019</li>
-        <li>Nazgul GRB Triangulation — Sardinia, 2021</li>
+        <li>C/C++</li>
+        <li>FORTRAN</li>
+        <li>Python</li>
+        <li>R</li>
+        <li>Stan</li>
+        <li>JAGS</li>
+        <li>IDL</li>
+        <li>LaTeX</li>
+        <li>Emacs</li>
       </ul>
     </div>
-  </section>
+    <div class="cv-skill-group">
+      <h4>Statistics & Analysis</h4>
+      <ul>
+        <li>Full Bayesian inference</li>
+        <li>Maximum likelihood</li>
+        <li>XSPEC</li>
+        <li>3ML (developer)</li>
+      </ul>
+    </div>
+    <div class="cv-skill-group">
+      <h4>Development</h4>
+      <ul>
+        <li>git</li>
+        <li>GitHub workflows</li>
+        <li>Coverage</li>
+        <li>Python frameworks</li>
+        <li>Docker</li>
+        <li>conda</li>
+      </ul>
+    </div>
+    <div class="cv-skill-group">
+      <h4>Instruments</h4>
+      <ul>
+        <li>Fermi-GBM</li>
+        <li>Fermi-LAT</li>
+        <li>Swift-BAT</li>
+        <li>Swift-XRT</li>
+        <li>INTEGRAL-SPI</li>
+        <li>GROND</li>
+        <li>POLAR</li>
+      </ul>
+    </div>
+    <div class="cv-skill-group">
+      <h4>Languages</h4>
+      <ul>
+        <li>English</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
   <footer style="margin-top:72px;padding-top:24px;border-top:1px solid var(--border);text-align:center;font-size:.85rem;color:var(--fg-muted)">
     <p>© <span id="yr"></span> J. Michael Burgess — <a href="https://grburgess.github.io">grburgess.github.io</a></p>
